@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Results | MFMCF UNIOSUN</title>
+    <link rel="stylesheet" href="result.css">
+    <!-- In results.html -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="both.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="result-header">
+            <div class="logo-container">
+                <i class="fas fa-church logo-icon"></i>
+                <h1 class="logo-text">MFMCF UNIOSUN<br>OSOGBO CAMPUS</h1>
+            </div>
+            <h2 class="result-title">EXAM RESULTS</h2>
+        </header>
+
+        <main class="result-content">
+            <div class="user-info-card">
+                <h3 class="info-title"><i class="fas fa-user-graduate"></i> Student Information</h3>
+                <div class="info-grid" id="userInfo">
+                    <!-- Filled by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="score-card">
+                <div class="score-circle">
+                    <svg class="progress-ring" width="120" height="120">
+                        <circle class="progress-ring-circle" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                    </svg>
+                    <div class="score-value" id="scoreValue">0%</div>
+                </div>
+                <div class="score-details">
+                    <h3>Exam Summary</h3>
+                    <div class="score-stats">
+                        <div class="stat correct">
+                            <i class="fas fa-check"></i>
+                            <span id="correctCount">0</span> Correct
+                        </div>
+                        <div class="stat incorrect">
+                            <i class="fas fa-times"></i>
+                            <span id="incorrectCount">0</span> Incorrect
+                        </div>
+                        <div class="stat unanswered">
+                            <i class="fas fa-question"></i>
+                            <span id="unansweredCount">0</span> Unanswered
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-container">
+                <h3 class="results-title"><i class="fas fa-list-ol"></i> Detailed Results</h3>
+                <div class="results-list" id="resultsList">
+                    <!-- Filled by JavaScript -->
+                </div>
+            </div>
+            <!-- Add this button in your results-container div after the results-list -->
+<div class="action-buttons">
+    <button id="downloadPdf" class="btn btn-download">
+        <i class="fas fa-file-pdf"></i> Download Results
+    </button>
+    <button id="printResults" class="btn btn-print">
+        <i class="fas fa-print"></i> Print Results
+    </button>
+</div>
+        </main>
+
+        <footer class="result-footer">
+            <p class="copyright">&copy; 2025 MFMCF UNIOSUN Osogbo Campus. All Rights Reserved.</p>
+            <p class="powered-by">Powered by MFMCF UNIOSUN ICT</p>
+        </footer>
+    </div>
+
+    <script src="result.js"></script>
+</body>
+</html>

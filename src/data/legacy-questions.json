@@ -1,0 +1,1698 @@
+[
+  {
+    "id": "legacy-q-1",
+    "order": 1,
+    "prompt": "Brother Peter has recently been appointed as a fellowship leader. However, despite his efforts, he struggles in his ministry relying solely on physical strength. According to the teaching on anointing, what is most likely missing in his ministry?",
+    "explanation": "Ministry effectiveness relies on the empowerment of the Holy Spirit, not just human effort (Zechariah 4:6).",
+    "options": [
+      {
+        "label": "More financial support",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "The anointing of the Holy Spirit",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "More personal discipline",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "A better understanding of doctrine",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "The approval of his peers",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-2",
+    "order": 2,
+    "prompt": "Sister Joy is anointed and preaches powerfully but she often harbors bitterness and refuses to forgive others. What is the likely outcome of her ministry?",
+    "explanation": "Unresolved sin and bitterness can quench the Holy Spirit's work (Ephesians 4:30-31).",
+    "options": [
+      {
+        "label": "She will be greatly rewarded despite her attitude",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "She will remain effective as long as she prays",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Her anointing will gradually diminish",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Her bad character will have no effect on her ministry",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "She will continue to increase in anointing and power",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-3",
+    "order": 3,
+    "prompt": "Brother Samuel always exhibits patience, gentleness, and humility when dealing with difficult people in the church. What biblical term best describes his character?",
+    "explanation": "These qualities are listed as aspects of the Holy Spirit's work in a believer's life (Galatians 5:22-23).",
+    "options": [
+      {
+        "label": "Spiritual zeal",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "The fruit of the Spirit",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "A strong personality",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Ministerial intelligence",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "Legalistic discipline",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-4",
+    "order": 4,
+    "prompt": "Brother James, a choir leader, secretly takes money from church offerings for personal use. According to biblical examples, which of the following best describes his potential downfall?",
+    "explanation": "Scripture shows that dishonesty in spiritual matters brings exposure and consequences (Acts 5:1-11).",
+    "options": [
+      {
+        "label": "He will be exposed and lose his position",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "He will remain undetected and continue his ministry",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "His anointing will protect him from consequences",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "The church will increase financially despite his actions",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "God will overlook it because of his singing talent",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-5",
+    "order": 5,
+    "prompt": "Sister Deborah is highly anointed but struggles with pride. What does the Bible say about the relationship between anointing and character?",
+    "explanation": "The Bible teaches that humility and godly character are essential for sustaining anointing (Proverbs 16:18; James 4:6).",
+    "options": [
+      {
+        "label": "Anointing can compensate for bad character",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Divine character sustains anointing",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Pride strengthens a person's anointing",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Anointing makes character irrelevant",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "Character and anointing are unrelated",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-6",
+    "order": 6,
+    "prompt": "Moses was a great leader anointed by God but failed to enter the Promised Land due to which character deficiency?",
+    "explanation": "Moses struck the rock in anger instead of speaking to it as God commanded, which cost him entry into the Promised Land (Numbers 20:10-12).",
+    "options": [
+      {
+        "label": "Fear",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Anger",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Dishonesty",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Pride",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "Laziness",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-7",
+    "order": 7,
+    "prompt": "Brother Timothy has been dedicated to his calling but he has started compromising his faith because of his love for worldly pleasures. Which biblical figure had a similar downfall?",
+    "explanation": "Demas abandoned Paul because he loved the world (2 Timothy 4:10).",
+    "options": [
+      {
+        "label": "Apostle Paul",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Elijah",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Demas",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Timothy",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "Barnabas",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-8",
+    "order": 8,
+    "prompt": "Gehazi, Elisha's servant, was positioned to receive a great anointing but lost his destiny because of what sin?",
+    "explanation": "Gehazi lied and took gifts from Naaman out of greed, leading to judgment (2 Kings 5:20-27).",
+    "options": [
+      {
+        "label": "Gossip",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Covetousness",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Fear",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Anger",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "Dishonesty",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-9",
+    "order": 9,
+    "prompt": "Brother Emmanuel desires to grow in his anointing and character. According to the Bible, who is the perfect example he should follow?",
+    "explanation": "Jesus is the ultimate model of anointing and godly character (Hebrews 12:2; 1 Peter 2:21).",
+    "options": [
+      {
+        "label": "Moses",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Elijah",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Jesus Christ",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Apostle Peter",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "John the Baptist",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-10",
+    "order": 10,
+    "prompt": "Sister Grace realizes she has character flaws that could affect her anointing. What should she do according to the prayer points provided?",
+    "explanation": "The Bible encourages believers to seek God's transformative power to overcome weaknesses (Psalm 51:10; 2 Corinthians 12:9).",
+    "options": [
+      {
+        "label": "Ignore her flaws and focus on ministry",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Depend on her anointing to cover up her character flaws",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Pray for God to remove character deficiencies",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Blame others for her bad character",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "Avoid serving in ministry altogether",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-11",
+    "order": 11,
+    "prompt": "A new academic session has just begun, and as an MFMCF worker, you notice that many freshmen seem lost and overwhelmed by campus life. According to the recommended evangelistic strategies, what is the best approach to reaching them before they adopt unhealthy campus influences?",
+    "explanation": "Early engagement prevents negative influences and establishes spiritual foundations (Proverbs 22:6). Proactive outreach aligns with Jesus' model of seeking the lost (Luke 19:10).",
+    "options": [
+      {
+        "label": "Organize a weekly Bible quiz competition",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Launch an immediate Freshers' Forum to engage them early",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Wait until they start having spiritual challenges before reaching out",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Focus only on those who show interest in church activities",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-12",
+    "order": 12,
+    "prompt": "Your campus fellowship wants to hold a large crusade, but some members are skeptical about its effectiveness. According to the MFMCF evangelistic strategies, why is mass evangelism still an important approach?",
+    "explanation": "Mass evangelism follows the biblical pattern of preaching to multitudes (Matthew 5:1–2, Acts 2:14–41), though it should be paired with discipleship (Matthew 28:19–20).",
+    "options": [
+      {
+        "label": "It allows reaching a large audience at once",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "It is less time-consuming than personal evangelism",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "It eliminates the need for follow-up discipleship",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "It prevents opposition from other campus groups",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-13",
+    "order": 13,
+    "prompt": "A student has been avoiding Christian gatherings but frequently interacts on social media. What evangelistic strategy would be most effective in reaching him?",
+    "explanation": "Meeting people where they are (online) reflects Paul's principle of adaptability (1 Corinthians 9:22). Digital platforms can bridge gaps for gospel outreach.",
+    "options": [
+      {
+        "label": "Personal evangelism",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Mass evangelism",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Social Media Evangelism",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Literature Evangelism",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-14",
+    "order": 14,
+    "prompt": "An MFMCF leader on campus notices that students are struggling with time management, which affects their spiritual growth. What type of evangelistic programme can be introduced to address this while sharing the gospel?",
+    "explanation": "Addressing practical needs with biblical wisdom mirrors Jesus' holistic ministry (Matthew 11:28–30). It opens doors for evangelism while providing value (Colossians 4:5–6).",
+    "options": [
+      {
+        "label": "Organizing a campus-wide music concert",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Hosting a Time Management Seminar with biblical principles",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Increasing the number of weekly services",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Preaching only during Sunday services",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-15",
+    "order": 15,
+    "prompt": "A sister in the fellowship expresses concern that many female students on campus feel isolated and lack mentorship. What is the best evangelistic strategy to engage and disciple them?",
+    "explanation": "Targeted discipleship meets specific needs (Titus 2:3-5). Jesus ministered to women individually (John 4) and in groups (Luke 8:1-3), showing the importance of intentional engagement.",
+    "options": [
+      {
+        "label": "Organizing a Sisters' Forum to address their needs",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Asking them to attend general Sunday services",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Holding frequent deliverance services",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Focusing only on male evangelism since they are leaders",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-16",
+    "order": 16,
+    "prompt": "During a campus outreach, an MFMCF worker encounters a student who is hesitant to attend services but is open to friendly interactions. Which evangelistic method would be most effective?",
+    "explanation": "Jesus modeled relational evangelism (e.g., Zacchaeus in Luke 19:1-10). 1 Peter 3:15 emphasizes sharing faith through gentle, relationship-based opportunities.",
+    "options": [
+      {
+        "label": "Friendship Evangelism – building trust through genuine love and care",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Forcing them to attend church services",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Preaching aggressively at them",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Ignoring them since they are uninterested",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-17",
+    "order": 17,
+    "prompt": "A student leader is passionate about evangelism but often neglects prayer and spiritual preparation. According to the prerequisites for effective strategies, what is missing in his approach?",
+    "explanation": "Spiritual warfare requires prayer (Ephesians 6:18-19). The early church prioritized prayer before outreach (Acts 4:23-31), and Jesus taught that fruitfulness depends on abiding in Him (John 15:5).",
+    "options": [
+      {
+        "label": "Proper concerted supplication (prayer) before evangelism",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Enough social media advertisements",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "More church decorations to attract students",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Engaging in only theoretical discussions",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-18",
+    "order": 18,
+    "prompt": "Your fellowship is considering starting literature evangelism on campus. What key resource should be prayerfully distributed to ensure effectiveness?",
+    "explanation": "God's Word is powerful (Hebrews 4:12). Distributing biblically sound materials aligns with the Great Commission (Matthew 28:20) and follows the example of spreading godly instruction (2 Timothy 3:16-17).",
+    "options": [
+      {
+        "label": "Secular novels that teach good morals",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "MFM publications like 'Fire in the Word' and books by Dr. D.K. Olukoya",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Random newspapers with motivational quotes",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Flyers with only the fellowship's service times",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-19",
+    "order": 19,
+    "prompt": "An MFMCF campus fellowship notices an increase in student debates about different religious ideologies. Which strategy should be used to effectively engage in evangelism in this environment?",
+    "explanation": "Paul's approach in Athens (Acts 17:22-23) demonstrates cultural awareness before preaching. Proverbs 18:13 warns against answering before listening. Surveys create bridges for gospel conversations.",
+    "options": [
+      {
+        "label": "Campus Survey – understanding the spiritual landscape before evangelizing",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Criticizing other religious groups openly",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Using only personal opinions in discussions",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Avoiding evangelism completely to prevent conflicts",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-20",
+    "order": 20,
+    "prompt": "A fellowship leader is frustrated because some evangelistic efforts have failed. According to prescriptions for effective evangelism, what key mindset must they adopt?",
+    "explanation": "Galatians 6:9 encourages believers not to grow weary in doing good, for in due season they will reap if they do not give up. Effective evangelism requires perseverance (Matthew 10:22).",
+    "options": [
+      {
+        "label": "Commitment and seriousness despite initial setbacks",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Giving up since no one responded immediately",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Only targeting students who are already interested in Christianity",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Avoiding evangelism completely",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-21",
+    "order": 21,
+    "prompt": "Brother John used to be very active in church but recently he has stopped attending services, avoids Christian gatherings and rarely prays. His behavior aligns with which cause of backsliding?",
+    "explanation": "Hebrews 10:24-25 warns against forsaking the assembling of believers together. Isolation from Christian community often leads to spiritual decline (Proverbs 18:1).",
+    "options": [
+      {
+        "label": "Indiscipline and lack of self-control",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Lack of fellowship with one another",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Fear of persecution",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Overcommitment to secular work",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "None of the above",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-22",
+    "order": 22,
+    "prompt": "Sister Mary who once led evangelism now finds it difficult to share her faith at school because she is afraid of being mocked. According to the text what is this an example of?",
+    "explanation": "2 Timothy 1:7-8 reminds us that God has not given us a spirit of fear. The fear of man brings a snare (Proverbs 29:25), but boldness comes from the Holy Spirit (Acts 4:31).",
+    "options": [
+      {
+        "label": "Unwillingness to confess Christ",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Fear of rejection",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Lack of knowledge",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Improper church training",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "Justifiable caution",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-23",
+    "order": 23,
+    "prompt": "Brother James recently started dressing and behaving like unbelievers to fit in with his classmates. Which cause of backsliding does this reflect?",
+    "explanation": "1 Samuel 8:5-7 shows the danger of wanting to be like others. Romans 12:2 commands believers not to conform to this world. Compromise with worldly standards leads to spiritual decline.",
+    "options": [
+      {
+        "label": "Desire to be independent",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Wanting to be like other nations",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Lack of personal conviction",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Poor discipleship",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "None of the above",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-24",
+    "order": 24,
+    "prompt": "Brother Samuel once known for his vibrant prayer life now struggles to pray and often feels spiritually dry. This is best described as:",
+    "explanation": "Hebrews 2:1 warns against neglecting our salvation. Spiritual dryness often begins with neglecting prayer (1 Thessalonians 5:17) and other spiritual disciplines (2 Peter 1:5-8).",
+    "options": [
+      {
+        "label": "Worldliness",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Indiscipline",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Prayerlessness",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Lack of self-control",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "Backsliding by neglect",
+        "isCorrect": true,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-25",
+    "order": 25,
+    "prompt": "A backslidden sister argues that she can worship God privately and no longer needs to attend church or fellowship with others. What biblical warning does this contradict?",
+    "explanation": "The Bible explicitly warns against neglecting Christian fellowship (Hebrews 10:25). Proverbs 18:1 shows that isolation leads to spiritual danger, while Acts 2:42 demonstrates the early church's commitment to gathering together.",
+    "options": [
+      {
+        "label": "Hebrews 10:24-25 - Do not forsake the assembly of believers",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "2 Timothy 2:22 - Flee youthful lusts",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "John 3:16 - God so loved the world",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Revelation 3:16 - God will spew out the lukewarm",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "Romans 12:1-2 - Present your body as a living sacrifice",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-26",
+    "order": 26,
+    "prompt": "Brother Peter used to be committed to his faith but he recently started justifying sin, arguing that 'God understands.' What is the potential consequence of this attitude?",
+    "explanation": "1 John 1:8-10 warns that denying our sin deceives us. Hebrews 3:12-13 cautions against being hardened by sin's deceitfulness. Justifying sin leads to spiritual deterioration (Galatians 6:7-8).",
+    "options": [
+      {
+        "label": "Spiritual blindness and loss of heavenly vision",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Increased church responsibilities",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "A more lenient judgment from God",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "A deeper understanding of grace",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "None of the above",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-27",
+    "order": 27,
+    "prompt": "A church member confesses to falling into sin repeatedly but refuses to acknowledge the need for repentance, arguing that he will change 'when the time is right.' What consequence does the Bible warn about for unrepentant backsliders?",
+    "explanation": "Hebrews 10:26-27 warns of judgment for willful sin. Revelation 3:5 shows that names can be blotted from the Book of Life. Proverbs 28:13 emphasizes that concealing sins brings no prosperity, only confession and repentance do.",
+    "options": [
+      {
+        "label": "Loss of heavenly inheritance",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Delayed blessings",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Reduced church attendance",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Temporary spiritual weakness",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "Longer prayer sessions needed",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-28",
+    "order": 28,
+    "prompt": "After living in sin for a while, Sister Ruth realizes she has strayed from God and wants to return. According to the text, what is the first step in the restoration process?",
+    "explanation": "2 Corinthians 7:10 shows godly sorrow produces repentance. The prodigal son 'came to himself' first (Luke 15:17) before returning. Recognition of one's fallen state precedes repentance (Revelation 3:17-18).",
+    "options": [
+      {
+        "label": "Resolution to serve in church again",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Realisation of spiritual degeneration",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Attending church more frequently",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Increased fasting and prayer",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "Avoiding people who remind her of her past",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-29",
+    "order": 29,
+    "prompt": "Brother David repents from backsliding and returns to God. However, he still keeps some sinful habits saying 'God knows I am trying.' According to the cure for backsliding, what essential step is he missing?",
+    "explanation": "2 Corinthians 7:1 calls for cleansing from all filthiness. Complete repentance requires forsaking sin (Proverbs 28:13). Partial obedience is disobedience (1 Samuel 15:22-23). True restoration demands full surrender (James 4:7-8).",
+    "options": [
+      {
+        "label": "Realisation",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Renunciation",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Reception",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Fellowship",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "Baptism",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-30",
+    "order": 30,
+    "prompt": "Sister Joy rededicates her life to Christ and decides to remain strong in faith. According to the text, what is crucial for her to stay spiritually firm?",
+    "explanation": "John 15:4-5 emphasizes abiding in Christ as the key to spiritual fruitfulness. Hebrews 10:24-25 stresses mutual encouragement among believers. Spiritual growth requires both vertical (with God) and horizontal (with other believers) relationships.",
+    "options": [
+      {
+        "label": "Remaining in Christ through personal fellowship and accountability",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Avoiding new friendships to prevent bad influences",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Attending church services without involvement",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Studying theology extensively",
+        "isCorrect": false,
+        "order": 4
+      },
+      {
+        "label": "Reading self-help books on discipline",
+        "isCorrect": false,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-31",
+    "order": 31,
+    "prompt": "John is a Christian student who often dreams of being a successful engineer but does not make concrete plans for his studies. He rarely studies, prays only when exams approach, and expects God to miraculously make him pass. Based on the principles of success in the text, what is John's main mistake?",
+    "explanation": "James 2:17 teaches that faith without works is dead. Proverbs 21:5 shows that careful planning leads to advantage. While trusting God is essential (Proverbs 3:5-6), we must also diligently work (Colossians 3:23) as God's partners in achieving success.",
+    "options": [
+      {
+        "label": "He lacks a clear vision of his future",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "He does not have faith in God's power",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "He is not taking purposeful actions to achieve his goals",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "He should rely only on divine intervention for success",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-32",
+    "order": 32,
+    "prompt": "Sarah is an MFM Campus Fellowship leader who wants to be more effective in her ministry. She studies the life of Apostle Paul and notes his goal-oriented nature. Which of the following characteristics of Paul should Sarah adopt to succeed in her leadership?",
+    "explanation": "Philippians 3:13-14 shows Paul's focused determination. 1 Corinthians 9:24-27 illustrates his spiritual discipline. Effective ministry requires steadfastness (1 Corinthians 15:58) and consistency (Galatians 6:9) in pursuing God's calling.",
+    "options": [
+      {
+        "label": "Being passive and waiting for divine intervention",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Prioritizing comfort over responsibility",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Being resolute, disciplined and consistent",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Avoiding challenges to maintain peace",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-33",
+    "order": 33,
+    "prompt": "David is a university student in a challenging environment where ungodly influences are prevalent. He is determined to maintain his faith while excelling academically. According to the text, which of Daniel's qualities should David emulate to achieve success?",
+    "explanation": "Daniel 1:8-20 demonstrates Daniel's balanced approach: excellence in secular learning (v. 17) combined with spiritual devotion (v. 8) and prayer (Daniel 6:10). His integrity (Daniel 6:4) and wisdom (Daniel 1:20) made him outstanding in both spiritual and academic realms.",
+    "options": [
+      {
+        "label": "Complaining about the challenges around him",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Isolating himself completely from academic activities",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Being diligent, wise, prayerful and maintaining integrity",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Depending only on his intelligence and personal effort",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-34",
+    "order": 34,
+    "prompt": "Deborah is a hardworking student who spends hours studying but struggles with anxiety about failing. She often relies solely on her strength, neglecting to trust in God. What does Proverbs 21:31 teach about achieving success?",
+    "explanation": "Proverbs 21:31 states: 'The horse is prepared for the day of battle, but the victory belongs to the LORD.' This teaches the balance between human responsibility (preparation) and divine sovereignty (ultimate success). Philippians 4:6-7 also encourages trusting God rather than being anxious.",
+    "options": [
+      {
+        "label": "Success is entirely based on personal effort",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Prayer alone guarantees success even without hard work",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "While preparation is necessary, ultimate success comes from God",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Those who trust in God do not need to study",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-35",
+    "order": 35,
+    "prompt": "Ayo is preparing for his final exams and wants to succeed. Which of the following strategies aligns with the biblical principles of success outlined in the text?",
+    "explanation": "Proverbs 21:5 shows that careful planning leads to advantage, while Colossians 3:23 commands working heartily as for the Lord. Biblical success combines diligent effort (Proverbs 6:6-8) with trusting God (Proverbs 3:5-6).",
+    "options": [
+      {
+        "label": "Attending only revision classes and skipping earlier lectures",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Depending on last-minute cramming to pass exams",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Studying diligently from the beginning of the session planning effectively and relying on God",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Copying answers from others to ensure success",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-36",
+    "order": 36,
+    "prompt": "Daniel is writing an exam but spends too much time on one question causing him to rush through the rest. Based on the principles outlined in the text what should he have done?",
+    "explanation": "Ecclesiastes 8:5-6 emphasizes the wisdom of proper timing and judgment. Luke 14:28-30 illustrates the importance of counting the cost beforehand. Effective exam strategy reflects biblical wisdom in stewardship of time and resources (Ephesians 5:15-16).",
+    "options": [
+      {
+        "label": "Pray and expect divine inspiration for all answers",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Read all questions carefully, allocate time wisely and maintain accuracy",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Answer only the questions he finds easy and skip the hard ones",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Focus only on his favorite subject and ignore the rest",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-37",
+    "order": 37,
+    "prompt": "Jane has failed a few exams and now believes she is destined to be a failure. She is starting to give up on her studies. Based on Matthew 8:2 and 3 John 2 what should Jane understand about success?",
+    "explanation": "3 John 1:2 confirms God desires our prosperity in all things. Matthew 8:2-3 shows Jesus' willingness to restore what is broken. Romans 8:37 assures we are more than conquerors through Christ. Temporary setbacks don't define our destiny (Philippians 3:13-14).",
+    "options": [
+      {
+        "label": "Failure is God's punishment for past mistakes",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Some people are created to fail and she should accept it",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Success is God's will for every believer and she should keep striving",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "God only helps those who succeed effortlessly",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-38",
+    "order": 38,
+    "prompt": "Michael wants to improve his spiritual life while maintaining academic excellence. What is the best approach based on the principles outlined in the text?",
+    "explanation": "Habakkuk 2:2-3 teaches the power of writing the vision. Proverbs 16:3 encourages committing plans to the Lord. Daniel's example (Daniel 1:17-20) shows that spiritual devotion and academic excellence can coexist when properly balanced.",
+    "options": [
+      {
+        "label": "Praying for academic success but making no effort to study",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Setting tangible long-term, intermediate and short-term goals while relying on God",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Focusing only on academic success and ignoring spiritual growth",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Studying hard but avoiding prayer and fellowship to save time",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-39",
+    "order": 39,
+    "prompt": "Tolu believes that since God desires his success, he does not need to study but should instead focus only on prayers and fasting. What does Psalm 37:3 teach about achieving success?",
+    "explanation": "Psalm 37:3 says 'Trust in the LORD and do good.' This shows the dual requirement of faith and action. 2 Thessalonians 3:10 warns against idleness. Biblical success requires both dependence on God (John 15:5) and diligent labor (Proverbs 13:4).",
+    "options": [
+      {
+        "label": "Success is only for those who work hard without trusting God",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Trusting in God does not require preparation",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "A combination of diligent effort and faith in God leads to success",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Only spiritual success matters, not academic success",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-40",
+    "order": 40,
+    "prompt": "Joshua aspires to be a future leader in MFM Campus Fellowship. Which principle from the text should he apply to be effective?",
+    "explanation": "1 Timothy 4:12-16 emphasizes both godliness and diligent development. Biblical leadership requires balanced growth in character (Titus 1:7-9) and competence (Exodus 18:21), always depending on God (Zechariah 4:6).",
+    "options": [
+      {
+        "label": "Wait for leadership opportunities without preparation",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Develop himself through discipline, diligence, and total dependence on God",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Depend only on spiritual gifts and neglect practical leadership skills",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Avoid responsibilities so as not to face challenges",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-41",
+    "order": 41,
+    "prompt": "A group of members in your fellowship is arguing over a new doctrinal teaching that seems to contradict previous teachings. Some members support it, while others reject it. As a leader, what should be your FIRST approach?",
+    "explanation": "Acts 17:11 commends examining Scripture for truth. 2 Timothy 2:15 emphasizes correct handling of God's word. Doctrinal disputes require biblical resolution (Titus 1:9), not opinions or votes.",
+    "options": [
+      {
+        "label": "Dismiss the issue and continue with regular fellowship activities",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Call for a debate to let both sides argue their points",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Search the Scriptures for guidance and use sound doctrinal teaching to clarify the issue",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Ask the members to vote on whether to accept or reject the doctrine",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-42",
+    "order": 42,
+    "prompt": "A senior member of the fellowship believes he should be the leader and secretly gathers support against the current leader. This has caused division and strife in the group. What is the BEST biblical approach to handle this?",
+    "explanation": "Matthew 18:15-17 outlines conflict resolution starting privately. Galatians 6:1 calls for gentle restoration. Public confrontation should be last resort (1 Timothy 5:20).",
+    "options": [
+      {
+        "label": "Confront the person in public and rebuke him before the congregation",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Address the issue in a private discussion and seek a resolution based on biblical principles",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Expel the member immediately from the fellowship to prevent further damage",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Ignore the issue and focus on spiritual matters",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-43",
+    "order": 43,
+    "prompt": "There are allegations that the fellowship treasurer has misused funds meant for outreach programs. How should the leadership handle this issue?",
+    "explanation": "Deuteronomy 19:15 requires proper investigation. 1 Timothy 5:19 warns against hasty accusations. Accountability structures (Acts 6:1-7) ensure transparency in financial matters.",
+    "options": [
+      {
+        "label": "Call for a public meeting and openly accuse the treasurer",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Pray about it and wait for God’s judgment",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Constitute a committee to investigate the matter thoroughly before taking action",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Immediately remove the treasurer and appoint a new one without further discussion",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-44",
+    "order": 44,
+    "prompt": "Two key members of the fellowship have a serious disagreement over a personal matter, and this is affecting the unity of the group. What should the leader do?",
+    "explanation": "Matthew 5:23-24 prioritizes reconciliation. Ephesians 4:3 commands preserving unity. Leaders should facilitate peacemaking (Romans 14:19) without taking sides (James 2:1).",
+    "options": [
+      {
+        "label": "Encourage them to discuss their differences privately and seek reconciliation",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Take sides with the person who is more spiritually mature",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Ask both members to leave the fellowship until they resolve their issue",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Ignore the dispute and let them handle it on their own",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-45",
+    "order": 45,
+    "prompt": "A well-respected member of the fellowship has been caught in an immoral act. Some members believe he should be expelled, while others argue for mercy. What should be the leadership's response?",
+    "explanation": "Galatians 6:1-2 instructs restoring sinners gently. 2 Corinthians 2:6-8 shows discipline aims at redemption. Public exposure is only for unrepentant sin (1 Timothy 5:20).",
+    "options": [
+      {
+        "label": "Address the issue privately through counseling, prayer, and correction according to biblical standards",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Immediately announce the person’s sin before the entire fellowship",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Ignore the issue to prevent division in the group",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Ask the member to leave permanently without any discussion",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-46",
+    "order": 46,
+    "prompt": "The university administration has banned public gatherings of the fellowship, threatening to expel any student who attends meetings. What is the BEST course of action?",
+    "explanation": "Acts 22:25 shows Paul appealing to legal rights. Matthew 10:16 advises wisdom amid persecution. Prayer (Acts 4:23-31) and diplomacy (1 Timothy 2:1-2) should precede confrontation.",
+    "options": [
+      {
+        "label": "Disband the fellowship to avoid confrontation",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Continue meeting in secret without informing anyone",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Seek legal or administrative counsel while committing the matter to prayer",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Confront the authorities and demand your rights aggressively",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-47",
+    "order": 47,
+    "prompt": "A new executive member of the fellowship feels sidelined because he was not consulted in recent decisions. He is becoming resentful and passive-aggressive in meetings. What should the fellowship leader do?",
+    "explanation": "Philippians 2:3-4 values others' perspectives. Proverbs 15:1 teaches gentle answers defuse anger. Private resolution follows Jesus' model (Matthew 18:15) before escalation.",
+    "options": [
+      {
+        "label": "Publicly rebuke him for his attitude",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Call him for a private discussion to understand his concerns and clarify his role",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Remove him from leadership to prevent further disruption",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Ignore his behavior and hope he adjusts over time",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-48",
+    "order": 48,
+    "prompt": "Some members of the fellowship are advocating for the inclusion of modern trends, such as allowing worldly music and dressing styles, to attract more students. What should the leader do?",
+    "explanation": "Romans 12:2 commands nonconformity to the world. 1 Peter 1:15-16 calls for holiness. Leaders must uphold biblical standards (Titus 2:7-8) while explaining their purpose (1 Peter 3:15).",
+    "options": [
+      {
+        "label": "Allow the changes to make the fellowship more appealing",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Strictly enforce conservative traditions without explanation",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Teach sound doctrine emphasizing biblical principles on holiness and separation from worldly practices",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Let members decide individually how they want to worship",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-49",
+    "order": 49,
+    "prompt": "Some members believe in open-air preaching, while others prefer one-on-one evangelism. This disagreement has led to division in the evangelism team. What is the BEST way to handle this?",
+    "explanation": "1 Corinthians 12:4-6 shows diversity in ministry methods. Ephesians 4:3-6 maintains unity amid diversity. Both mass (Acts 2:14-41) and personal (John 4:7-26) evangelism are biblical.",
+    "options": [
+      {
+        "label": "Allow both methods to coexist while ensuring unity in the team",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Choose one method and enforce it as the only acceptable approach",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Disband the evangelism team until they can agree on a method",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Vote on which method to use going forward",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-50",
+    "order": 50,
+    "prompt": "Many fellowship members are struggling academically, and some have started skipping meetings to focus on their studies. How should the leadership respond?",
+    "explanation": "Ecclesiastes 9:10 encourages excellence in labor. Daniel 1:17-20 models balancing spiritual and academic pursuits. The church should support holistic growth (Luke 2:52).",
+    "options": [
+      {
+        "label": "Organize academic support programs while emphasizing time management",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Condemn them for prioritizing studies over God’s work",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Reduce the number of fellowship meetings permanently",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Ignore the issue since academics is a personal matter",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-51",
+    "order": 51,
+    "prompt": "The red colour depicts the Holy spirit tongue of Fire as depicted in",
+    "explanation": "Acts 2:3 describes the tongues of fire that appeared on the day of Pentecost, symbolizing the Holy Spirit.",
+    "options": [
+      {
+        "label": "Acts 1: 2 - 4",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Acts 1: 5 - 8",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Acts 2: 5 - 8",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Acts 2: 3",
+        "isCorrect": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-52",
+    "order": 52,
+    "prompt": "The Black Colour depicts",
+    "explanation": "The black colour is associated with the mountain top, though the specific symbolism may vary by context.",
+    "options": [
+      {
+        "label": "The world",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "The mountains",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "The earth",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "The mountain top",
+        "isCorrect": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-53",
+    "order": 53,
+    "prompt": "Royalty is depicted by the",
+    "explanation": "Purple has historically been associated with royalty due to the rarity and cost of purple dye in ancient times.",
+    "options": [
+      {
+        "label": "White colour",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Pink colour",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Red colour",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Purple colour",
+        "isCorrect": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-54",
+    "order": 54,
+    "prompt": "The white colour is for holiness within only",
+    "explanation": "White often symbolizes holiness, but its meaning is not limited to internal holiness alone; it can represent purity in broader contexts.",
+    "options": [
+      {
+        "label": "True",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "False",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Maybe",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Not entirely true",
+        "isCorrect": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-55",
+    "order": 55,
+    "prompt": "The soul winning field for end time soldiers is depicted by",
+    "explanation": "The circle is used to symbolize the soul-winning field, representing the encompassing and global nature of the mission.",
+    "options": [
+      {
+        "label": "The mountains",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "The circle",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "The fire",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "The 'ministries'",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-56",
+    "order": 56,
+    "prompt": "One of this is not a doctrine of MFM",
+    "explanation": "The 200-day reign of Christ is not a standard doctrine in most mainstream Christian teachings, including MFM.",
+    "options": [
+      {
+        "label": "The final judgement",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "The baptism of the holy spirit",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "The 200-day reign of Christ",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "The New Heaven and Earth",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "legacy-q-57",
+    "order": 57,
+    "prompt": "The Basis of our faith and Fellowship can be attributed to",
+    "explanation": "The Scriptures are the foundational basis of Christian faith and fellowship, as they are the inspired word of God.",
+    "options": [
+      {
+        "label": "MFM",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Our family",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "The Scriptures",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Our G O",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  }
+]

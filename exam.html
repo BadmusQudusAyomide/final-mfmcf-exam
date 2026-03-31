@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MFMCF Uniosun - Discipleship/Stewardship Class Exam</title>
+  <script src="https://cdn.jsdelivr.net/npm/icon-beautified-toasts/dist/toast.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icon-beautified-toasts/dist/toast.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #BA124F; /* Main color */
+      color: white;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+
+    .timer-container {
+      background-color: #fff;
+      color: #BA124F;
+      border-radius: 8px;
+      padding: 10px 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      display: inline-flex;
+      align-items: center;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    .timer-icon {
+      margin-right: 10px;
+      color: #BA124F;
+    }
+
+    .user-info-card {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .user-info-card h3 {
+      color: #BA124F;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    .user-info-item {
+      display: flex;
+      margin-bottom: 8px;
+    }
+
+    .user-info-label {
+      font-weight: 600;
+      width: 120px;
+      color: #555;
+    }
+
+    .progress-tracker {
+      margin-top: 15px;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      padding: 10px 15px;
+    }
+
+    .progress-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin: 30px auto;
+      flex-grow: 1;
+    }
+
+    #question-container {
+      background: #f9f9f9;
+      padding: 25px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      border-left: 5px solid #BA124F;
+    }
+
+    .question {
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-align: left;
+      margin-bottom: 25px;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      transition: all 0.2s ease;
+    }
+
+    .question:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .question-header {
+      margin-bottom: 15px;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    .option {
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background-color: #f5f5f5;
+    }
+
+    .option:hover {
+      background-color: #eaeaea;
+    }
+
+    .option input[type="radio"] {
+      margin-right: 12px;
+      transform: scale(1.2);
+    }
+
+    .option-text {
+      flex: 1;
+    }
+
+    .pagination-controls {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+      gap: 15px;
+    }
+
+    .pagination-controls button {
+      background: #BA124F; /* Main color */
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .pagination-controls button:disabled {
+      background: #cccccc;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .pagination-controls button:hover:not(:disabled) {
+      background: #701530; /* Darker shade */
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(140, 29, 64, 0.2);
+    }
+
+    .pagination-controls button:active:not(:disabled) {
+      transform: translateY(0);
+    }
+
+    #submit-btn {
+      background: #27ae60; /* Green for submit */
+    }
+
+    #submit-btn:hover:not(:disabled) {
+      background: #219653;
+    }
+
+    .pagination-info {
+      text-align: center;
+      margin: 15px 0;
+      color: #666;
+      font-weight: 500;
+    }
+
+    .footer {
+      background-color: #BA124F;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.85rem;
+      margin-top: auto;
+    }
+
+    .footer p {
+      margin: 3px 0;
+    }
+
+    .powered-by {
+      font-weight: 600;
+      color: #f0f0f0;
+    }
+
+    /* Toast styling */
+    #toast-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .toast {
+      padding: 15px 20px;
+      border-radius: 5px;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transform: translateX(0);
+      transition: all 0.3s ease;
+      max-width: 350px;
+    }
+
+    .toast.fade-out {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    .toast-success { background-color: #4CAF50; }
+    .toast-warning { background-color: #FF9800; }
+    .toast-error { background-color: #F44336; }
+    .toast-info { background-color: #2196F3; }
+
+    .toast-icon { font-size: 1.2rem; }
+    .toast-message { flex: 1; }
+    .toast-close { cursor: pointer; opacity: 0.7; }
+    .toast-close:hover { opacity: 1; }
+
+    .lock-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.85);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .lock-icon {
+      font-size: 3rem;
+      color: #f44336;
+      margin-bottom: 15px;
+    }
+
+    .lock-message {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .lock-warning {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+
+    .lock-button {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lock-button:hover {
+      background-color: #d32f2f;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+        width: 95%;
+      }
+
+      #question-container {
+        padding: 15px;
+      }
+
+      .pagination-controls {
+        flex-direction: column;
+      }
+
+      .pagination-controls button {
+        margin: 5px 0;
+      }
+
+      .header h1 {
+        font-size: 1.4rem;
+      }
+
+      .user-info-card {
+        padding: 10px;
+      }
+
+      .user-info-label {
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>MFMCF Uniosun Osogbo Discipleship/Stewardship Class Exam</h1>
+    <div class="timer-container">
+      <i class="fas fa-clock timer-icon"></i>
+      <span id="timer">35:00</span> remaining
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="user-info-card">
+      <h3>Candidate Information</h3>
+      <div id="user-info-content">
+        <!-- User info will be populated here -->
+      </div>
+    </div>
+
+    <div class="progress-tracker">
+      <div class="progress-info">
+        <i class="fas fa-tasks"></i>
+        <span id="progress-text">Question 1-10 of 50</span>
+      </div>
+      <div class="progress-info">
+        <i class="fas fa-check-circle"></i>
+        <span id="answered-count">0 answered</span>
+      </div>
+    </div>
+
+    <div class="pagination-info">
+      <span id="pagination-text">Page 1 of 5</span>
+    </div>
+
+    <div id="question-container">
+      <!-- Questions will be dynamically rendered here -->
+    </div>
+
+    <div class="pagination-controls">
+  <button id="prev-btn"><i class="fas fa-arrow-left"></i> Previous</button>
+  <button id="next-btn">Next <i class="fas fa-arrow-right"></i></button>
+  <button id="submit-btn" style="display: none;"><i class="fas fa-check-circle"></i> Submit Exam</button>
+</div>
+
+<div id="toast-container">
+  <!-- Toasts will be dynamically inserted here -->
+</div>
+
+<div class="footer">
+  <p>&copy; 2025 MFMCF Uniosun</p>
+  <p class="powered-by">Powered by MFMCF Uniosun ICT</p>
+</div>
+
+<script src="exam.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFMCF UNIOSUN Osogbo Campus Portal</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <i class="fas fa-church logo-icon"></i>
+                <h1 class="logo-text">MFMCF UNIOSUN<br>OSOGBO CAMPUS</h1>
+            </div>
+            <h2 class="portal-title">STUDENT PORTAL</h2>
+        </header>
+
+        <main class="main-content">
+            <div class="exam-card animated-card">
+                <div class="exam-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3 class="exam-title">Available Exam</h3>
+                <div class="exam-item">
+                    <i class="fas fa-arrow-right"></i>
+                    <span>Discipleship/Stewardship Class Exam</span>
+                </div>
+                <button class="take-exam-btn" id="examBtn">Take Exam</button>
+            </div>
+        </main>
+
+        <div class="registration-modal" id="registrationModal">
+            <div class="modal-content animated-modal">
+                <span class="close-btn" id="closeBtn">&times;</span>
+                <h2 class="modal-title">Exam Registration</h2>
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="fullName"><i class="fas fa-user"></i> Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="matricNumber"><i class="fas fa-id-card"></i> Matric Number</label>
+                        <input type="text" placeholder="Kindly enter your Phone number instead please 🥺" id="matricNumber" name="matricNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="department"><i class="fas fa-users"></i> Church Department</label>
+                        <select id="department" name="department" required>
+                            <option value="">Select Department</option>
+                            <option value="Choir">Choir</option>
+                            <option value="Academic/follow-up">Academic/follow-up</option>
+                            <option value="Ushering">Ushering</option>
+                            <option value="Technical">Technical</option>
+                            <option value="Media">Media</option>
+                            <option value="Bible-study">Bible-study</option>
+                            <option value="Prayer">Prayer</option>
+                            <option value="Welfare">Welfare</option>
+                            <option value="Sanitation">Sanitation</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Media">Media</option>
+                            <option value="Evangelism">Evangelism</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="level"><i class="fas fa-graduation-cap"></i> Level</label>
+                        <select id="level" name="level" required>
+                            <option value="">Select Level</option>
+                            <option value="100">100 Level</option>
+                            <option value="200">200 Level</option>
+                            <option value="300">300 Level</option>
+                            <option value="400">400 Level</option>
+                            <option value="500">500 Level</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <button type="submit" class="register-btn">Proceed to Exam</button>
+                </form>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p class="copyright">&copy; 2025 MFMCF UNIOSUN Osogbo Campus. All Rights Reserved.</p>
+            <p class="powered-by">Powered by MFMCF UNIOSUN ICT</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

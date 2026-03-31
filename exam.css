@@ -1,0 +1,167 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #BA124F, #52007B);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Title */
+h1 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Question Container */
+#question-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Question Style */
+.question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 5px solid white;
+    transition: all 0.3s ease-in-out;
+}
+
+.question:hover {
+    border-left: 5px solid #FFD700;
+    transform: scale(1.02);
+}
+
+/* Pagination Buttons */
+.pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pagination-controls button {
+    background: linear-gradient(135deg, #FFD700, #FF5733);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    flex: 1;
+    margin: 0 5px;
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.pagination-controls button:hover {
+    background: linear-gradient(135deg, #FF5733, #FFD700);
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 20px rgba(255, 87, 51, 0.4);
+}
+
+/* Hide Submit Button Initially */
+#submit-btn {
+    display: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .pagination-controls {
+        flex-direction: column;
+    }
+
+    .pagination-controls button {
+        margin: 5px 0;
+    }
+}
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.toast {
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateX(0);
+    transition: all 0.3s ease;
+    max-width: 350px;
+}
+
+.toast.fade-out {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.toast-success { background-color: #4CAF50; }
+.toast-warning { background-color: #FF9800; }
+.toast-error { background-color: #F44336; }
+.toast-info { background-color: #2196F3; }
+
+.toast-icon { font-size: 1.2rem; }
+.toast-message { flex: 1; }
+.toast-close { cursor: pointer; opacity: 0.7; }
+.toast-close:hover { opacity: 1; }
+
+@keyframes fa-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(359deg); }
+}

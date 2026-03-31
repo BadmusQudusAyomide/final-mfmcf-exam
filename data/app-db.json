@@ -1,0 +1,123 @@
+{
+  "exam": {
+    "id": "exam_001",
+    "title": "Discipleship/Stewardship Class Exam",
+    "slug": "discipleship-stewardship-class-exam",
+    "instructions": "Follow the same church exam flow, but submissions and results are now stored on the backend.",
+    "durationMinutes": 35,
+    "status": "PUBLISHED",
+    "questions": [
+      {
+        "id": "q1",
+        "order": 1,
+        "prompt": "Brother Peter has recently been appointed as a fellowship leader. However, despite his efforts, he struggles in his ministry relying solely on physical strength. According to the teaching on anointing, what is most likely missing in his ministry?",
+        "explanation": "Ministry effectiveness relies on the empowerment of the Holy Spirit, not just human effort.",
+        "options": [
+          {
+            "label": "More financial support",
+            "isCorrect": false
+          },
+          {
+            "label": "The anointing of the Holy Spirit",
+            "isCorrect": true
+          },
+          {
+            "label": "More personal discipline",
+            "isCorrect": false
+          },
+          {
+            "label": "A better understanding of doctrine",
+            "isCorrect": false
+          },
+          {
+            "label": "The approval of his peers",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": "q3",
+        "order": 2,
+        "prompt": "Many fellowship members are struggling academically, and some have started skipping meetings to focus on their studies. How should the leadership respond?",
+        "explanation": "The church should support holistic growth while teaching discipline and time management.",
+        "options": [
+          {
+            "label": "Organize academic support programs while emphasizing time management",
+            "isCorrect": true
+          },
+          {
+            "label": "Condemn them for prioritizing studies over God’s work",
+            "isCorrect": false
+          },
+          {
+            "label": "Reduce the number of fellowship meetings permanently",
+            "isCorrect": false
+          },
+          {
+            "label": "Ignore the issue since academics is a personal matter",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "id": "6220dfed-08ed-49ef-8916-501cc552381d",
+      "fullName": "Badmus qudus",
+      "matricNumber": "2023/48247",
+      "phoneNumber": "09022594853",
+      "department": "Choir",
+      "level": "100",
+      "createdAt": "2026-03-31T00:36:47.430Z"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "245a1080-6b56-46e9-a56f-0938b46d2a0a",
+      "examId": "exam_001",
+      "candidateId": "6220dfed-08ed-49ef-8916-501cc552381d",
+      "startedAt": "2026-03-31T00:36:47.430Z",
+      "expiresAt": "2026-03-31T01:11:47.430Z",
+      "completedAt": "2026-03-31T00:37:10.498Z",
+      "status": "SUBMITTED"
+    }
+  ],
+  "submissions": [
+    {
+      "id": "68ccd6d7-26fa-467a-9663-16fc08726dde",
+      "examId": "exam_001",
+      "candidateId": "6220dfed-08ed-49ef-8916-501cc552381d",
+      "score": 1,
+      "totalQuestions": 3,
+      "submittedAt": "2026-03-31T00:37:10.498Z",
+      "securityFlags": 0,
+      "submittedAnswers": [
+        {
+          "questionId": "q1",
+          "prompt": "Brother Peter has recently been appointed as a fellowship leader. However, despite his efforts, he struggles in his ministry relying solely on physical strength. According to the teaching on anointing, what is most likely missing in his ministry?",
+          "explanation": "Ministry effectiveness relies on the empowerment of the Holy Spirit, not just human effort.",
+          "correctAnswer": "The anointing of the Holy Spirit",
+          "selectedOption": "The anointing of the Holy Spirit",
+          "isCorrect": true
+        },
+        {
+          "questionId": "q2",
+          "prompt": "A student has been avoiding Christian gatherings but frequently interacts on social media. What evangelistic strategy would be most effective in reaching him?",
+          "explanation": "Meeting people where they are online can create a practical bridge for gospel outreach.",
+          "correctAnswer": "Social Media Evangelism",
+          "selectedOption": "Mass evangelism",
+          "isCorrect": false
+        },
+        {
+          "questionId": "q3",
+          "prompt": "Many fellowship members are struggling academically, and some have started skipping meetings to focus on their studies. How should the leadership respond?",
+          "explanation": "The church should support holistic growth while teaching discipline and time management.",
+          "correctAnswer": "Organize academic support programs while emphasizing time management",
+          "selectedOption": "Condemn them for prioritizing studies over God’s work",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
