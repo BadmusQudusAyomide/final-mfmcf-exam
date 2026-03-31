@@ -1,5 +1,5 @@
 import { Prisma, type ExamStatus } from "@prisma/client";
-import legacyQuestions from "@/data/legacy-questions.json";
+import currentYearQuestions from "@/data/current-year-questions.json";
 import { prisma } from "@/lib/prisma";
 import type {
   ExamSettingsInput,
@@ -10,7 +10,7 @@ import type {
 
 const DEFAULT_EXAM_SLUG = "discipleship-stewardship-class-exam";
 
-const seedQuestions = legacyQuestions satisfies Array<{
+const seedQuestions = currentYearQuestions satisfies Array<{
   id: string;
   order: number;
   prompt: string;

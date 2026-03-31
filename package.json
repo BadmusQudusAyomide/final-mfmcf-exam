@@ -12,7 +12,8 @@
     "prisma:push": "prisma db push",
     "legacy:extract": "node scripts/extract-legacy-questions.mjs",
     "legacy:sync-exam": "node scripts/sync-legacy-exam.mjs",
-    "legacy:import-data": "node scripts/import-legacy-json-data.mjs"
+    "legacy:import-data": "node scripts/import-legacy-json-data.mjs",
+    "questions:sync-current": "node scripts/sync-current-year-exam.mjs"
   },
   "dependencies": {
     "@prisma/client": "^6.18.0",

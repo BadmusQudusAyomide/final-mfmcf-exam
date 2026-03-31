@@ -162,6 +162,7 @@ export default function HomePage() {
                   onChange={(event) =>
                     setFormData((current) => ({ ...current, fullName: event.target.value }))
                   }
+                  placeholder="Enter your full name"
                   className="w-full rounded-md border border-[#ddd] px-[15px] py-3 text-base transition focus:border-[#ba124f] focus:outline-none focus:ring-4 focus:ring-[rgba(186,18,79,0.1)]"
                 />
               </div>
@@ -176,6 +177,7 @@ export default function HomePage() {
                   onChange={(event) =>
                     setFormData((current) => ({ ...current, matricNumber: event.target.value }))
                   }
+                  placeholder="Enter your matric number"
                   className="w-full rounded-md border border-[#ddd] px-[15px] py-3 text-base transition focus:border-[#ba124f] focus:outline-none focus:ring-4 focus:ring-[rgba(186,18,79,0.1)]"
                 />
               </div>
@@ -230,6 +232,7 @@ export default function HomePage() {
                   onChange={(event) =>
                     setFormData((current) => ({ ...current, phoneNumber: event.target.value }))
                   }
+                  placeholder="Enter your phone number"
                   className="w-full rounded-md border border-[#ddd] px-[15px] py-3 text-base transition focus:border-[#ba124f] focus:outline-none focus:ring-4 focus:ring-[rgba(186,18,79,0.1)]"
                 />
               </div>

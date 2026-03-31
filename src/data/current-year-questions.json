@@ -1,0 +1,1402 @@
+[
+  {
+    "id": "current-salvation-1",
+    "order": 1,
+    "prompt": "A believer says, \"I was saved last week, so now I am free from the presence of sin.\" Based on the definition of salvation in the manual, which correction is most accurate?",
+    "explanation": "The manual explicitly states that at salvation a believer is delivered from the power, pollution, and penalty of sin.",
+    "options": [
+      {
+        "label": "You are free only from the guilt of sin, not its presence.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Salvation delivers you from the power, pollution, and penalty of sin-all three.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "You will be delivered from the pollution of sin only after death.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Salvation only covers past sins, not the nature of sin.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-salvation-2",
+    "order": 2,
+    "prompt": "According to the study text, what was transferred at the fall?",
+    "explanation": "John 8:44 is cited in the manual: fatherhood was transferred to the devil.",
+    "options": [
+      {
+        "label": "Dominion over the earth",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Fatherhood to the devil",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "The law of Moses",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "The ability to hear God",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-salvation-3",
+    "order": 3,
+    "prompt": "Which of the following was not part of God's redemption plan as outlined in the manual?",
+    "explanation": "The manual says God sent man out of the garden so he would not live forever in a fallen state by eating from the tree of life.",
+    "options": [
+      {
+        "label": "Giving the law through Moses",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Ordaining blood of bulls and goats",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Sending prophets to teach the law",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Allowing man to eat from the tree of life",
+        "isCorrect": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-salvation-4",
+    "order": 4,
+    "prompt": "The manual states that the \"only way to the Father\" became available through:",
+    "explanation": "The text says Jesus, through the sacrifice of God's only begotten Son, became the only way to the Father.",
+    "options": [
+      {
+        "label": "Keeping the Ten Commandments",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "The blood of bulls and goats",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "The sacrifice of God's only begotten Son",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Water baptism",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-salvation-5",
+    "order": 5,
+    "prompt": "Which blessing of redemption is described as being \"recreated\" and having the Holy Spirit come to \"abide therein\"?",
+    "explanation": "The manual says the believer's spirit was recreated by the Holy Spirit and He came to abide therein.",
+    "options": [
+      {
+        "label": "Our body",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Our soul",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Our spirit",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Our conscience",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-sanctification-1",
+    "order": 6,
+    "prompt": "A person prays, \"Lord, sanctify me! Make me holy!\" According to the conclusion of the Sanctification chapter, how should you counsel them?",
+    "explanation": "The manual says believers are not begging or praying for sanctification; they are thanking God because He has already done it in Christ.",
+    "options": [
+      {
+        "label": "Continue praying earnestly; sanctification is a lifelong process.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Stop praying for it; thank God it is already done in Christ.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Pray for both purification and separation as two separate steps.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Only pastors can be sanctified; you must wait for ordination.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-sanctification-2",
+    "order": 7,
+    "prompt": "Which statement best reflects the relationship between purification and separation?",
+    "explanation": "The manual teaches that God first purifies at salvation and then separates unto Himself, both encompassed in sanctification already accomplished in Christ.",
+    "options": [
+      {
+        "label": "Separation comes first, then purification follows.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Purification and separation happen simultaneously at salvation.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "God separates dirty vessels to Himself and then purifies them.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Purification happens at salvation; separation is a later step.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-sanctification-3",
+    "order": 8,
+    "prompt": "The shortcomings of Old Testament purification included all of the following except:",
+    "explanation": "Hebrews 10:4 says the blood of bulls and goats could not take away sins, so the statement that it could take away sins but not guilt is the exception.",
+    "options": [
+      {
+        "label": "It could not make the comers perfect.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "It had to be done year after year.",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "It could take away sins but not the guilt.",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "It only brought remembrance of sins.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-sanctification-4",
+    "order": 9,
+    "prompt": "According to Hebrews 10:10, sanctification was accomplished:",
+    "explanation": "The memory verse states sanctification came through the offering of the body of Jesus Christ once for all.",
+    "options": [
+      {
+        "label": "Through the blood of bulls and goats",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Through the offering of the body of Jesus Christ once for all",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "By keeping the law perfectly",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "By being baptized in water",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-1",
+    "order": 10,
+    "prompt": "Which statement best reflects the manual's teaching on our separation unto God?",
+    "explanation": "The manual states, \"The devil can no longer rent us for quick use. We are solely sold out unto God.\"",
+    "options": [
+      {
+        "label": "The devil can still rent us for quick use if we allow him.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "The devil no longer has any claim or authority over us.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "We are only separated on Sundays.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Separation is conditional upon our daily holiness.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-2",
+    "order": 11,
+    "prompt": "Which of the following is not listed in the manual as a way God speaks to man?",
+    "explanation": "The listed ways are inner witness, scriptures, inner voice, visions and dreams, renewed conscience, audible voice, and gifts of the Spirit.",
+    "options": [
+      {
+        "label": "Inner witness",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Visions and dreams",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Audible voice",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Natural intuition",
+        "isCorrect": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-3",
+    "order": 12,
+    "prompt": "A believer hears a thought that brings confusion, fear, and goes against Scripture. This voice is most likely:",
+    "explanation": "The manual describes the devil's voice as going against God's will, manipulative, and lacking divine peace.",
+    "options": [
+      {
+        "label": "God's voice",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Man's voice",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Devil's voice",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "The voice of a prophet",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-4",
+    "order": 13,
+    "prompt": "The manual says man's voice \"can seem to be right even when wrong.\" Which verse is used to support this?",
+    "explanation": "The cited verse is Proverbs 14:12.",
+    "options": [
+      {
+        "label": "Romans 8:6-8",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Proverbs 14:12",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Philippians 4:7",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "1 Corinthians 2:14",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-5",
+    "order": 14,
+    "prompt": "Which of the following is a distinguishing mark of God's voice?",
+    "explanation": "The manual lists unexplainable inner peace, with references including Philippians 4:7 and 2 Thessalonians 3:16.",
+    "options": [
+      {
+        "label": "It always comes in a loud, audible tone.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "It comes with unexplainable inner peace.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "It is always confirmed by a prophet.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "It never agrees with Scripture.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-6",
+    "order": 15,
+    "prompt": "According to the text, what hindrance is referenced by Ezekiel 14:4?",
+    "explanation": "The manual lists idols of the heart as a hindrance to hearing God.",
+    "options": [
+      {
+        "label": "Worry and anxiety",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Impatience",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Idols of the heart",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Busy mindedness",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-7",
+    "order": 16,
+    "prompt": "Which statement about the Bible is false according to the manual?",
+    "explanation": "The manual states that the center of the doctrine of the Bible is Christ, not the church.",
+    "options": [
+      {
+        "label": "It is God's revelation to mankind.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "The only complete role model in the Bible is the Lord Jesus.",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "The center of the doctrine of the Bible is the church.",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "The New Testament is the fulfillment of the Old Testament.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-8",
+    "order": 17,
+    "prompt": "The manual says meditation on the word is to the soul what _ is to the body.",
+    "explanation": "The manual says, \"Meditation is to the soul what digestion is to the body.\"",
+    "options": [
+      {
+        "label": "Exercise",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Digestion",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Rest",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Water",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-9",
+    "order": 18,
+    "prompt": "According to the text, which of the following is a result of meditating on the Bible?",
+    "explanation": "Psalm 119:99 is cited: meditating on the word makes a man more understanding than his teachers.",
+    "options": [
+      {
+        "label": "Becoming more understanding than your teachers",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Guaranteed financial wealth",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Automatic healing from all diseases",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Ordination as a pastor",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-10",
+    "order": 19,
+    "prompt": "The manual quotes John 15:3 to show that the word of God is:",
+    "explanation": "The word of God is presented as a cleanser in John 15:3.",
+    "options": [
+      {
+        "label": "A cleanser",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Life",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Faith producer",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "A guide",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-11",
+    "order": 20,
+    "prompt": "Why is the Holy Spirit essential for understanding the Bible?",
+    "explanation": "The Bible was given by the inspiration of the Holy Spirit, and in-depth understanding depends on Him.",
+    "options": [
+      {
+        "label": "The Bible was written in a secret language.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "The Bible was given by the inspiration of the Holy Spirit, and He teaches us.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Without the Spirit, the Bible is dangerous to read.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "The Spirit rewrites the Bible for each generation.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-12",
+    "order": 21,
+    "prompt": "The manual defines quiet time as:",
+    "explanation": "Quiet time is defined as any time a believer decides to be with God for heart-to-heart relationship.",
+    "options": [
+      {
+        "label": "A period of complete silence without any activity.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Any time a believer decides to be with God for heart-to-heart relationship.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "A group prayer meeting held in the morning.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "The time spent sleeping after a prayer session.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-13",
+    "order": 22,
+    "prompt": "Which of the following materials is not listed as needed for quiet time?",
+    "explanation": "The listed materials are Bible, writing material, song or hymn book, and daily devotional.",
+    "options": [
+      {
+        "label": "A complete Bible",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "A writing material",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "A song or hymn book",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "A smartphone with internet",
+        "isCorrect": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-14",
+    "order": 23,
+    "prompt": "A person says, \"I don't need personal quiet time because my family altar and Sunday services are enough.\" According to the hindrances listed, this is:",
+    "explanation": "The manual lists misinterpretation of church services, family altar, and joint devotion as a hindrance to quiet time.",
+    "options": [
+      {
+        "label": "Acceptable; corporate worship replaces personal devotion.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "A hindrance called misinterpretation of church services, family altar and joint devotion for quiet time.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Only a problem if they miss church.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Actually encouraged in the manual.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-15",
+    "order": 24,
+    "prompt": "Which blessing is associated with Isaiah 40:29-31 in the quiet time section?",
+    "explanation": "The blessing attached to Isaiah 40:29-31 is increased spiritual strength.",
+    "options": [
+      {
+        "label": "Perfect peace",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Increased spiritual strength",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Divine instructions",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Increased sensitivity to the Holy Spirit",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-16",
+    "order": 25,
+    "prompt": "One of the tips for effective quiet time is:",
+    "explanation": "The manual says to make quiet time a priority no matter how busy you are.",
+    "options": [
+      {
+        "label": "Only have quiet time when you feel like it.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Make it a priority no matter how busy you are.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Wait until you have a private room.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Use the same method every day without change.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-17",
+    "order": 26,
+    "prompt": "According to the manual, which of the following is not true about a new creation?",
+    "explanation": "Romans 6:14-18 is cited to show that the believer is now a servant of God unto righteousness and no longer unto sin.",
+    "options": [
+      {
+        "label": "God sees you as a new person whose sins have been washed and forgotten.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "You are entitled to all divine blessings as a joint-heir with Christ.",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "You are still a servant of sin until you grow spiritually.",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "You are delivered totally from the power of darkness.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-18",
+    "order": 27,
+    "prompt": "The manual lists \"breaking all diplomatic relationship with the devil\" as:",
+    "explanation": "This appears under \"The expectation of God from you.\"",
+    "options": [
+      {
+        "label": "An optional suggestion for mature believers",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "One of God's expectations from you",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "A result of water baptism",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "A work of the Holy Spirit only",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-19",
+    "order": 28,
+    "prompt": "Which scripture is used to support that believers are \"joint-heir with Him\"?",
+    "explanation": "The cited scripture is Romans 8:17.",
+    "options": [
+      {
+        "label": "Romans 8:17",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "2 Corinthians 5:21",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Colossians 1:13",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Ephesians 1:3",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-20",
+    "order": 29,
+    "prompt": "The manual says the expected response from the world includes hatred and temptations. What verse is given for how to respond to temptations?",
+    "explanation": "James 4:7 and 1 Corinthians 10:13 are cited under temptations; among the options, James 4:7 is correct.",
+    "options": [
+      {
+        "label": "Matthew 5:44-48",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "James 4:7",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "John 15:18-21",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "1 Peter 2:9",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-21",
+    "order": 30,
+    "prompt": "Which statement best summarizes the conclusion of \"The New Creation\"?",
+    "explanation": "The conclusion calls the believer to stand out for God because they are different from the world.",
+    "options": [
+      {
+        "label": "You are different from the world; stand out for God.",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Blend in with the world to reach them.",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Your identity is not important; only your actions matter.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "You will become different after many years.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-22",
+    "order": 31,
+    "prompt": "According to the section on holiness, which scripture is cited to show that holiness is required in every area of life if we must make heaven?",
+    "explanation": "Hebrews 12:14 is specifically mentioned in the manual.",
+    "options": [
+      {
+        "label": "Romans 12:1-2",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "1 Peter 1:15-16",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Hebrews 12:14",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Isaiah 35:8",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-23",
+    "order": 32,
+    "prompt": "In the section on love, which statement best reflects the manual's overall teaching?",
+    "explanation": "The manual presents love as the propelling force behind God's sacrifice and the fulfillment of the law.",
+    "options": [
+      {
+        "label": "Love ignores sin completely.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Love is the propelling force behind God's sacrifice and the fulfillment of the law.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Love is optional for believers.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Love only applies to fellow church members.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-24",
+    "order": 33,
+    "prompt": "Which of the following is listed as a hindrance to answered prayer?",
+    "explanation": "The manual lists secret sin, doubt and unbelief, and worry and anxiety as hindrances.",
+    "options": [
+      {
+        "label": "Not fasting",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Secret sin",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Lack of a prayer partner",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Not attending church",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-25",
+    "order": 34,
+    "prompt": "According to the section on faith, our faith is anchored on the nature of God which includes:",
+    "explanation": "The manual says God's nature includes never changing, never failing, and never lying.",
+    "options": [
+      {
+        "label": "Changing according to circumstances",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Never failing",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Sometimes lying",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Dependent on our performance",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-26",
+    "order": 35,
+    "prompt": "The responsibility of personal witnessing or evangelism is supported by which two verses?",
+    "explanation": "The manual quotes Matthew 24:13-14 and Mark 16:15.",
+    "options": [
+      {
+        "label": "Matthew 24:13-14 and Mark 16:15",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Romans 12:11 and James 5:16",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Galatians 5:14 and 1 John 3:22",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Acts 1:8 and 2 Timothy 3:16",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-27",
+    "order": 36,
+    "prompt": "Which of the following is not listed as a manifestation of the Holy Spirit?",
+    "explanation": "The listed manifestations are fire, dove, water, wind, rain, and oil.",
+    "options": [
+      {
+        "label": "Dove",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Fire",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Wind",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Thunder",
+        "isCorrect": true,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-28",
+    "order": 37,
+    "prompt": "The manual says the Holy Spirit \"reproves the world of sin.\" What does this mean?",
+    "explanation": "John 16:8 is referenced; reprove here means to convict the world of sin, righteousness, and judgment.",
+    "options": [
+      {
+        "label": "He punishes sinners.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "He convinces the world of sin, righteousness, and judgment.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "He condemns believers for their sins.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "He only reproves pastors.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-29",
+    "order": 38,
+    "prompt": "What is the condition \"complete brokenness\" associated with?",
+    "explanation": "Complete brokenness is listed as one of the conditions to being baptized in the Holy Spirit.",
+    "options": [
+      {
+        "label": "Salvation",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Water baptism",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Being baptized in the Holy Spirit",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "Hearing God",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-30",
+    "order": 39,
+    "prompt": "Which statement correctly distinguishes the Spirit \"within\" from the Spirit \"upon\"?",
+    "explanation": "The manual teaches that the Spirit within comes at the new birth, while the Spirit upon is the baptism of the Holy Spirit for power to serve.",
+    "options": [
+      {
+        "label": "Within is for Old Testament prophets; upon is for all believers.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Within comes at the new birth; upon is the baptism for power to serve.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Within gives power; upon gives salvation.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "There is no distinction; they are the same experience.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-31",
+    "order": 40,
+    "prompt": "The manual says, \"We must welcome the Holy Spirit as we would a _.\"",
+    "explanation": "The manual says, \"We must welcome the Holy Spirit as we would a dove.\"",
+    "options": [
+      {
+        "label": "King",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Dove",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "Fire",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Friend",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-32",
+    "order": 41,
+    "prompt": "Which of the following is not a symbolic representation of water baptism according to the four stages?",
+    "explanation": "The manual says, \"He ascended, I ascended with Him\" in the present, not as a future-only event.",
+    "options": [
+      {
+        "label": "He died, I died with Him.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "He was buried, I was buried with Him.",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "He ascended, I will ascend in the future.",
+        "isCorrect": true,
+        "order": 3
+      },
+      {
+        "label": "He was raised, I have a new life with Him.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-33",
+    "order": 42,
+    "prompt": "According to the manual, water baptism should be done:",
+    "explanation": "The manual says water baptism is meaningful only after a man is saved.",
+    "options": [
+      {
+        "label": "Before a person repents, to help them believe",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Only after a person is saved",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "To wash away original sin",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "As a requirement to become born again",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-34",
+    "order": 43,
+    "prompt": "Which verse is used to show that water baptism does not save by itself?",
+    "explanation": "The thief on the cross was not baptized but was saved, and the manual uses Luke 23:39-43 as proof.",
+    "options": [
+      {
+        "label": "Luke 23:39-43",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Matthew 28:19",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "1 Peter 3:21",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Mark 16:16",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-35",
+    "order": 44,
+    "prompt": "The manual states that water baptism is an open declaration of our death, burial, and resurrection with Jesus. Which scripture is cited for this in the manual?",
+    "explanation": "The manual gives Romans 3:3-6 under this note, even though that reference is unusual.",
+    "options": [
+      {
+        "label": "Romans 3:3-6",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Galatians 2:20",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "1 Corinthians 12:13",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Colossians 2:12",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-36",
+    "order": 45,
+    "prompt": "According to the conclusion, a believer's lifestyle after water baptism should be:",
+    "explanation": "The manual says the believer's lifestyle after water baptism should be a victorious Christian life over sin.",
+    "options": [
+      {
+        "label": "A victorious Christian life over sin",
+        "isCorrect": true,
+        "order": 1
+      },
+      {
+        "label": "Dependent on constant re-baptism",
+        "isCorrect": false,
+        "order": 2
+      },
+      {
+        "label": "Focused on outward rituals",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "The same as before baptism",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-37",
+    "order": 46,
+    "prompt": "Brother A was baptized in water as an infant in a Catholic church. After recently getting born again, he says, \"I don't need to be baptized again because I was already baptized as a baby.\" Based on the Water Baptism chapter, what should you tell him?",
+    "explanation": "The manual says water baptism is meaningful only after a man is saved and follows repentance and faith.",
+    "options": [
+      {
+        "label": "Infant baptism is valid because it was done in the name of the Father, Son, and Holy Spirit.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "Water baptism is meaningful only after a person is saved; it is an outward symbol of an inward reality, so believer's baptism is the biblical pattern.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "One baptism is enough regardless of age; he should not be re-baptized.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Infant baptism is acceptable if the parents were believers.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-38",
+    "order": 47,
+    "prompt": "Sister B has been a Christian for five years but feels she has never \"received the Holy Spirit\" because she hasn't spoken in tongues. She is discouraged and thinks she is missing something. According to the Holy Spirit chapter, how would you encourage her?",
+    "explanation": "The manual distinguishes the Spirit within at salvation from the Spirit upon for power, and it does not make tongues the only evidence for having the Spirit within.",
+    "options": [
+      {
+        "label": "She is correct; tongues are the only evidence of the Spirit's baptism.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "The Holy Spirit comes into every believer at the new birth (Spirit within); the baptism of the Holy Spirit is for power, and she can ask for it by faith, but her discouragement should be addressed with the truth that the Spirit already dwells in her.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "She must first be water baptized again before she can receive the Spirit.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "Only some Christians have the Holy Spirit; she should pray harder.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-39",
+    "order": 48,
+    "prompt": "Brother C is a new convert. He heard that Christians should \"put off the old man.\" He decides to isolate himself from all non-believers, stop talking to his family who are not saved, and quit his job because his colleagues are worldly. Based on \"The New Creation\" and \"Our Responsibilities,\" is his response correct?",
+    "explanation": "The manual calls believers to break relationship with the devil and his kingdom, not to isolate physically from unbelievers; believers are still meant to be light and witnesses in the world.",
+    "options": [
+      {
+        "label": "Yes, this is exactly what \"put off the old man\" means-complete separation from unbelievers.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "No, putting off the old man refers to your identity and behavior, not necessarily physical separation; you are still called to be a light in the world.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "He should only isolate himself for forty days, then return.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "The manual encourages breaking all diplomatic relationship with the devil, so breaking with unsaved family is required.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-40",
+    "order": 49,
+    "prompt": "Deacon D teaches a class saying, \"The Bible is our only authority, and we don't need the Holy Spirit to understand it because the words are clear enough.\" According to the chapter on The Bible, how would you respond?",
+    "explanation": "The manual says the Bible was given by the inspiration of the Holy Spirit, so He must not be left out for in-depth understanding of the Word. He is given to teach and guide believers into all truth.",
+    "options": [
+      {
+        "label": "He is correct; the Bible interprets itself without the Holy Spirit.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "The manual states that the Holy Spirit is essential because the Bible was given by His inspiration and He guides us into all truth.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "The Holy Spirit is only needed for preachers, not ordinary believers.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "The Bible should only be read through dreams and visions.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "current-q-41",
+    "order": 50,
+    "prompt": "Mrs. E has been struggling with hearing God. She says, \"I've prayed for a vision or an audible voice, but nothing happens. I think God is angry with me.\" Based on the Hearing God chapter, which response is most biblical?",
+    "explanation": "The manual emphasizes the inner witness as a general way of hearing God for every believer and warns against despising the simple ways God speaks.",
+    "options": [
+      {
+        "label": "She should continue seeking a vision; that is the only reliable way to hear.",
+        "isCorrect": false,
+        "order": 1
+      },
+      {
+        "label": "The inner witness is a general way of hearing God for every believer; she should build confidence in that and not despise the simple ways God speaks.",
+        "isCorrect": true,
+        "order": 2
+      },
+      {
+        "label": "God only speaks through prophets; she should consult a prophet.",
+        "isCorrect": false,
+        "order": 3
+      },
+      {
+        "label": "If God were not angry, He would give her an audible voice.",
+        "isCorrect": false,
+        "order": 4
+      }
+    ]
+  }
+]
