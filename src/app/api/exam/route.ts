@@ -17,6 +17,17 @@ export async function GET(request: Request) {
     return NextResponse.json(examPayload);
   } catch (error) {
     console.error(error);
+
+    if (error instanceof Error && error.message === "ALREADY_SUBMITTED") {
+      return NextResponse.json(
+        {
+          error: "You have already attempted this quiz. You cannot take it again.",
+          code: "ALREADY_SUBMITTED",
+        },
+        { status: 409 },
+      );
+    }
+
     return NextResponse.json(
       { error: "Unable to load the exam right now." },
       { status: 500 },

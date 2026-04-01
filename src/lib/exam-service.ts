@@ -231,12 +231,41 @@ export async function registerCandidate(input: RegistrationInput) {
 
 export async function getExamForCandidate(candidateId: string) {
   const exam = await getOrCreateExam();
-  const candidate = await prisma.candidate.findUnique({
-    where: { id: candidateId },
-  });
+  const [candidate, session, submission] = await prisma.$transaction([
+    prisma.candidate.findUnique({
+      where: { id: candidateId },
+    }),
+    prisma.examSession.findUnique({
+      where: {
+        examId_candidateId: {
+          examId: exam.id,
+          candidateId,
+        },
+      },
+    }),
+    prisma.examSubmission.findUnique({
+      where: {
+        examId_candidateId: {
+          examId: exam.id,
+          candidateId,
+        },
+      },
+      select: {
+        id: true,
+      },
+    }),
+  ]);
 
   if (!candidate) {
     throw new Error("Candidate not found.");
+  }
+
+  if (submission) {
+    throw new Error("ALREADY_SUBMITTED");
+  }
+
+  if (!session) {
+    throw new Error("Session not found.");
   }
 
   return {
@@ -258,6 +287,12 @@ export async function getExamForCandidate(candidateId: string) {
           .sort((a, b) => a.order - b.order)
           .map((option) => option.label),
       })),
+    },
+    session: {
+      id: session.id,
+      status: session.status,
+      expiresAt: session.expiresAt.toISOString(),
+      completedAt: session.completedAt?.toISOString() ?? null,
     },
   };
 }
@@ -789,5 +824,44 @@ export async function getPortalConfig() {
       departments: exam.departments,
       levels: exam.levels,
     },
+  };
+}
+
+export async function getAdminResultsExportData() {
+  const exam = await getOrCreateExam();
+
+  const submissions = await prisma.examSubmission.findMany({
+    where: {
+      examId: exam.id,
+    },
+    include: {
+      candidate: true,
+    },
+    orderBy: {
+      submittedAt: "desc",
+    },
+  });
+
+  return {
+    exam: {
+      title: exam.title,
+      slug: exam.slug,
+      totalQuestions: exam.questions.length,
+    },
+    submissions: submissions.map((submission) => ({
+      candidateName: submission.candidate.fullName,
+      matricNumber: submission.candidate.matricNumber,
+      phoneNumber: submission.candidate.phoneNumber,
+      department: submission.candidate.department,
+      level: submission.candidate.level,
+      score: submission.score,
+      totalQuestions: submission.totalQuestions,
+      percentage:
+        submission.totalQuestions > 0
+          ? Math.round((submission.score / submission.totalQuestions) * 100)
+          : 0,
+      securityFlags: submission.securityFlags,
+      submittedAt: submission.submittedAt.toISOString(),
+    })),
   };
 }

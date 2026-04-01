@@ -111,7 +111,7 @@ test.describe.serial("church exam smoke suite", () => {
   test("instruction page opens for the registered candidate", async ({ page }) => {
     await page.goto(`/instruction?candidateId=${registration.candidateId}`);
     await expect(page.getByRole("heading", { name: "Important Instructions" })).toBeVisible();
-    await expect(page.getByRole("link", { name: "Start Exam" })).toBeVisible();
+    await expect(page.getByRole("button", { name: "Start Exam" })).toBeVisible();
   });
 
   test("exam API returns the current 50-question paper", async ({ request }) => {

@@ -13,12 +13,20 @@ export default async function AdminPage() {
       title="MFMCF Exam Dashboard"
       description="Track registrations, monitor departments, review analytics, and open any student's full script without leaving the admin side."
       topAction={
-        <Link
-          href="/admin/exam"
-          className="rounded-2xl bg-[#7e1137] px-5 py-3 text-sm font-semibold !text-white shadow-[0_10px_24px_rgba(91,16,43,0.18)] transition hover:bg-[#65102d]"
-        >
-          Open Exam Builder
-        </Link>
+        <div className="flex flex-wrap items-center gap-3">
+          <Link
+            href="/api/admin/submissions/export"
+            className="rounded-2xl bg-[#9b5f1c] px-5 py-3 text-sm font-semibold !text-white shadow-[0_10px_24px_rgba(155,95,28,0.18)] transition hover:bg-[#7e4d17]"
+          >
+            Download All Results
+          </Link>
+          <Link
+            href="/admin/exam"
+            className="rounded-2xl bg-[#7e1137] px-5 py-3 text-sm font-semibold !text-white shadow-[0_10px_24px_rgba(91,16,43,0.18)] transition hover:bg-[#65102d]"
+          >
+            Open Exam Builder
+          </Link>
+        </div>
       }
     >
       <section className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
@@ -159,7 +167,7 @@ export default async function AdminPage() {
             </div>
             <div className="rounded-2xl bg-[#f8f9fb] p-4">
               <p className="text-sm text-[#655a61]">
-                Use the sidebar to move between the dashboard, exam builder, and the dedicated submissions page.
+                Use the sidebar to move between the dashboard, exam builder, and the dedicated submissions page. You can also export all submitted results into one CSV sheet for reporting.
               </p>
             </div>
           </div>

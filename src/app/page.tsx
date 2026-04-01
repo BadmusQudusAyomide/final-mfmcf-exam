@@ -13,6 +13,7 @@ import {
   FaUsers,
 } from "react-icons/fa";
 import { StudentPortalShell } from "@/components/student-portal-shell";
+import { useToast } from "@/components/toast-provider";
 
 const fallbackDepartments = [
   "Choir",
@@ -44,6 +45,7 @@ export default function HomePage() {
   const [departments, setDepartments] = useState(fallbackDepartments);
   const [levels, setLevels] = useState(fallbackLevels);
   const router = useRouter();
+  const { showToast } = useToast();
 
   useEffect(() => {
     async function loadPortalConfig() {
@@ -75,6 +77,11 @@ export default function HomePage() {
     event.preventDefault();
     setIsSubmitting(true);
     setErrorMessage("");
+    showToast({
+      variant: "info",
+      title: "Saving registration",
+      description: "Please wait while we prepare your exam access.",
+    });
 
     try {
       const response = await fetch("/api/register", {
@@ -92,13 +99,28 @@ export default function HomePage() {
 
       if (!response.ok || !payload.candidateId) {
         setErrorMessage(payload.error ?? "Unable to save registration.");
+        showToast({
+          variant: "error",
+          title: "Registration failed",
+          description: payload.error ?? "Unable to save registration right now.",
+        });
         return;
       }
 
+      showToast({
+        variant: "success",
+        title: "Registration saved",
+        description: "Your details are saved. Read the instructions before starting.",
+      });
       router.push(`/instruction?candidateId=${payload.candidateId}`);
     } catch (error) {
       console.error(error);
       setErrorMessage("Something went wrong while saving registration.");
+      showToast({
+        variant: "error",
+        title: "Something went wrong",
+        description: "We could not save your registration. Please try again.",
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -123,7 +145,14 @@ export default function HomePage() {
           </div>
           <button
             type="button"
-            onClick={() => setIsModalOpen(true)}
+            onClick={() => {
+              setIsModalOpen(true);
+              showToast({
+                variant: "info",
+                title: "Complete your registration",
+                description: "Enter your details to continue to the exam instructions.",
+              });
+            }}
             className="cursor-pointer rounded-[30px] bg-[#ba124f] px-[30px] py-3 text-base font-semibold text-white shadow-[0_4px_15px_rgba(186,18,79,0.3)] transition duration-300 hover:-translate-y-[3px] hover:bg-[#9a0e40] hover:shadow-[0_6px_20px_rgba(186,18,79,0.4)]"
           >
             Take Exam

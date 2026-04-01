@@ -19,13 +19,21 @@ export default async function AdminSubmissionsPage() {
       current="submissions"
       title="Submissions"
       description="This page is dedicated to submitted scripts, candidate records, and score review."
+      topAction={
+        <Link
+          href="/api/admin/submissions/export"
+          className="inline-flex items-center justify-center rounded-2xl bg-[#7e1137] px-5 py-3 text-sm font-semibold !text-white shadow-[0_10px_24px_rgba(91,16,43,0.18)] transition hover:bg-[#65102d]"
+        >
+          Download All Results
+        </Link>
+      }
     >
       <section className="rounded-[24px] border border-white/65 bg-white/72 p-6 shadow-[0_16px_40px_rgba(91,16,43,0.08)] backdrop-blur">
         <div className="mb-5 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>
             <h3 className="text-2xl font-semibold text-[#7e1137]">All Submissions</h3>
             <p className="text-sm text-[#655a61]">
-              Review every submission on its own page and open any script for details.
+              Review every submission on its own page, open any script for details, or export everything together.
             </p>
           </div>
           <div className="rounded-full bg-[#7e1137] px-4 py-2 text-sm font-medium text-white">
