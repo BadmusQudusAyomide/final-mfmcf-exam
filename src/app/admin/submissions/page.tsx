@@ -41,6 +41,7 @@ export default async function AdminSubmissionsPage() {
                 <th className="px-3 py-2">Department</th>
                 <th className="px-3 py-2">Level</th>
                 <th className="px-3 py-2">Score</th>
+                <th className="px-3 py-2">Flags</th>
                 <th className="px-3 py-2">Submitted</th>
                 <th className="px-3 py-2">Action</th>
               </tr>
@@ -58,6 +59,11 @@ export default async function AdminSubmissionsPage() {
                   <td className="px-3 py-4 font-semibold text-[#7e1137]">
                     {submission.score}/{submission.totalQuestions}
                   </td>
+                  <td className="px-3 py-4">
+                    <span className="rounded-full bg-[#7e1137] px-3 py-1 text-xs font-semibold text-white">
+                      {submission.securityFlags}
+                    </span>
+                  </td>
                   <td className="px-3 py-4 text-[#666]">{formatSubmittedAt(submission.submittedAt)}</td>
                   <td className="rounded-r-2xl px-3 py-4">
                     <Link
@@ -71,7 +77,7 @@ export default async function AdminSubmissionsPage() {
               ))}
               {dashboard.submissions.length === 0 ? (
                 <tr>
-                  <td colSpan={6} className="px-4 py-10 text-center text-[#666]">
+                  <td colSpan={7} className="px-4 py-10 text-center text-[#666]">
                     No submissions yet. Once students submit, they will appear here.
                   </td>
                 </tr>

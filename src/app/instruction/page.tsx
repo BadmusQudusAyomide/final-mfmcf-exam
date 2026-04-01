@@ -19,7 +19,7 @@ const instructions = [
     icon: FaClock,
     text: (
       <>
-        Time allowed is <strong>35 minutes</strong>
+        Time allowed is <strong>50 minutes</strong>
       </>
     ),
   },

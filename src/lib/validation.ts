@@ -11,6 +11,7 @@ export const registrationSchema = z.object({
 export const submissionSchema = z.object({
   candidateId: z.string().trim().min(1),
   examSlug: z.string().trim().min(1),
+  securityFlags: z.coerce.number().int().min(0).default(0),
   answers: z.array(
     z.object({
       questionId: z.string().trim().min(1),

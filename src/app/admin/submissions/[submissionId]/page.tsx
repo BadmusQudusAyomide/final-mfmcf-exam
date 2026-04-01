@@ -44,6 +44,7 @@ export default async function SubmissionDetailPage({
               <p><span className="font-semibold">Department:</span> {detail.candidate.department}</p>
               <p><span className="font-semibold">Level:</span> {detail.candidate.level}</p>
               <p><span className="font-semibold">Submitted:</span> {formatDate(detail.submission.submittedAt)}</p>
+              <p><span className="font-semibold">Recorded Flags:</span> {detail.submission.securityFlags}</p>
             </div>
           </section>
 
@@ -54,6 +55,9 @@ export default async function SubmissionDetailPage({
                 {detail.submission.score}/{detail.submission.totalQuestions}
               </p>
               <p className="mt-2 text-sm text-white/80">{detail.exam.title}</p>
+              <p className="mt-2 text-sm text-white/80">
+                Security flags recorded: {detail.submission.securityFlags}
+              </p>
             </div>
           </section>
         </div>

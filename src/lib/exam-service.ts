@@ -78,7 +78,7 @@ async function getOrCreateExam() {
       slug: DEFAULT_EXAM_SLUG,
       instructions:
         "Follow the same church exam flow, but submissions and results are now stored on the backend.",
-      durationMinutes: 35,
+      durationMinutes: 50,
       status: "PUBLISHED",
       departments: defaultDepartments,
       levels: defaultLevels,
@@ -329,7 +329,7 @@ export async function submitExam(input: SubmissionInput) {
         score,
         totalQuestions: exam.questions.length,
         submittedAt,
-        securityFlags: 0,
+        securityFlags: input.securityFlags,
         submittedAnswers: {
           create: results.map((item) => ({
             questionId: item.questionId,
@@ -346,7 +346,7 @@ export async function submitExam(input: SubmissionInput) {
         score,
         totalQuestions: exam.questions.length,
         submittedAt,
-        securityFlags: 0,
+        securityFlags: input.securityFlags,
         submittedAnswers: {
           deleteMany: {},
           create: results.map((item) => ({
@@ -459,6 +459,7 @@ export async function getAdminDashboardData() {
         : session?.status === "ACTIVE"
           ? "In Progress"
           : "Registered",
+      securityFlags: submission?.securityFlags ?? 0,
     };
   });
 
@@ -502,6 +503,7 @@ export async function getAdminDashboardData() {
       level: submission.candidate.level,
       score: submission.score,
       totalQuestions: submission.totalQuestions,
+      securityFlags: submission.securityFlags,
       submittedAt: submission.submittedAt.toISOString(),
     })),
     students,

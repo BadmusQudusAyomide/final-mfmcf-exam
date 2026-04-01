@@ -1,8 +1,17 @@
 "use client";
 
-import { Suspense, useEffect, useMemo, useState } from "react";
+import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { FaArrowLeft, FaArrowRight, FaCheck, FaCheckCircle, FaClock, FaTasks } from "react-icons/fa";
+import {
+  FaArrowLeft,
+  FaArrowRight,
+  FaCheck,
+  FaCheckCircle,
+  FaClock,
+  FaExclamationTriangle,
+  FaShieldAlt,
+  FaTasks,
+} from "react-icons/fa";
 
 interface ExamPayload {
   candidate: {
@@ -26,6 +35,13 @@ interface ExamPayload {
   };
 }
 
+function formatTime(totalSeconds: number) {
+  const safeSeconds = Math.max(0, totalSeconds);
+  const minutes = Math.floor(safeSeconds / 60);
+  const seconds = safeSeconds % 60;
+  return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+}
+
 function ExamPageContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -35,6 +51,30 @@ function ExamPageContent() {
   const [submitting, setSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [remainingSeconds, setRemainingSeconds] = useState(0);
+  const [securityFlags, setSecurityFlags] = useState(0);
+  const [activityMessage, setActivityMessage] = useState("");
+  const submitReasonRef = useRef<"manual" | "auto" | null>(null);
+  const latestPayloadRef = useRef<ExamPayload | null>(null);
+  const latestCandidateIdRef = useRef<string | null>(null);
+  const latestAnswersRef = useRef<Record<string, string>>({});
+  const latestSecurityFlagsRef = useRef(0);
+
+  useEffect(() => {
+    latestPayloadRef.current = payload;
+  }, [payload]);
+
+  useEffect(() => {
+    latestCandidateIdRef.current = candidateId;
+  }, [candidateId]);
+
+  useEffect(() => {
+    latestAnswersRef.current = answers;
+  }, [answers]);
+
+  useEffect(() => {
+    latestSecurityFlagsRef.current = securityFlags;
+  }, [securityFlags]);
 
   useEffect(() => {
     async function loadExam() {
@@ -53,6 +93,7 @@ function ExamPageContent() {
         }
 
         setPayload(data);
+        setRemainingSeconds(data.exam.durationMinutes * 60);
       } catch (error) {
         console.error(error);
         setErrorMessage("Unable to load exam.");
@@ -69,11 +110,21 @@ function ExamPageContent() {
     [answers],
   );
 
-  async function handleSubmit() {
-    if (!payload || !candidateId) {
+  const handleSubmit = useCallback(async (reason: "manual" | "auto" = "manual") => {
+    const currentPayload = latestPayloadRef.current;
+    const currentCandidateId = latestCandidateIdRef.current;
+    const currentAnswers = latestAnswersRef.current;
+    const currentSecurityFlags = latestSecurityFlagsRef.current;
+
+    if (!currentPayload || !currentCandidateId) {
       return;
     }
 
+    if (submitReasonRef.current) {
+      return;
+    }
+
+    submitReasonRef.current = reason;
     setSubmitting(true);
     setErrorMessage("");
 
@@ -84,11 +135,12 @@ function ExamPageContent() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          candidateId,
-          examSlug: payload.exam.slug,
-          answers: payload.exam.questions.map((question) => ({
+          candidateId: currentCandidateId,
+          examSlug: currentPayload.exam.slug,
+          securityFlags: currentSecurityFlags,
+          answers: currentPayload.exam.questions.map((question) => ({
             questionId: question.id,
-            selectedOption: answers[question.id],
+            selectedOption: currentAnswers[question.id],
           })),
         }),
       });
@@ -97,17 +149,121 @@ function ExamPageContent() {
 
       if (!response.ok) {
         setErrorMessage(data.error ?? "Unable to submit exam.");
+        submitReasonRef.current = null;
         return;
       }
 
-      router.push(`/result?candidateId=${candidateId}`);
+      router.push(`/result?candidateId=${currentCandidateId}`);
     } catch (error) {
       console.error(error);
-      setErrorMessage("Unable to submit exam.");
+      setErrorMessage(
+        reason === "auto"
+          ? "The exam tried to auto-submit after a violation, but it could not be saved immediately."
+          : "Unable to submit exam.",
+      );
+      submitReasonRef.current = null;
     } finally {
       setSubmitting(false);
     }
-  }
+  }, [router]);
+
+  useEffect(() => {
+    if (!payload || submitting || submitReasonRef.current) {
+      return;
+    }
+
+    const timer = window.setInterval(() => {
+      setRemainingSeconds((current) => {
+        if (current <= 1) {
+          window.clearInterval(timer);
+          setActivityMessage("Time is up. The exam is being submitted automatically.");
+          void handleSubmit("auto");
+          return 0;
+        }
+
+        return current - 1;
+      });
+    }, 1000);
+
+    return () => window.clearInterval(timer);
+  }, [payload, submitting, handleSubmit]);
+
+  useEffect(() => {
+    if (!payload || submitReasonRef.current) {
+      return;
+    }
+
+    function registerViolation(message: string, shouldAutoSubmit = false) {
+      setSecurityFlags((current) => current + 1);
+      setActivityMessage(message);
+
+      if (shouldAutoSubmit) {
+        void handleSubmit("auto");
+      }
+    }
+
+    function handleVisibilityChange() {
+      if (document.visibilityState === "hidden" && !submitReasonRef.current) {
+        registerViolation(
+          "You left or minimized the exam page. The exam is being submitted automatically.",
+          true,
+        );
+      }
+    }
+
+    function handleBeforeUnload(event: BeforeUnloadEvent) {
+      if (submitReasonRef.current) {
+        return;
+      }
+
+      event.preventDefault();
+      event.returnValue = "";
+      registerViolation(
+        "Leaving the exam page is not allowed. Your activity has been recorded.",
+      );
+    }
+
+    function handleContextMenu(event: MouseEvent) {
+      event.preventDefault();
+      registerViolation("Right-click is disabled during the exam. This activity has been recorded.");
+    }
+
+    function handleClipboardEvent(event: ClipboardEvent) {
+      event.preventDefault();
+      registerViolation("Copy, cut, and paste are disabled during the exam. This activity has been recorded.");
+    }
+
+    function handleKeyDown(event: KeyboardEvent) {
+      const loweredKey = event.key.toLowerCase();
+      const blockedShortcut =
+        event.key === "F12" ||
+        ((event.ctrlKey || event.metaKey) && ["c", "x", "v", "u", "p", "s"].includes(loweredKey)) ||
+        (event.ctrlKey && event.shiftKey && ["i", "j", "c"].includes(loweredKey));
+
+      if (blockedShortcut) {
+        event.preventDefault();
+        registerViolation("Restricted keyboard activity was detected and recorded.");
+      }
+    }
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    window.addEventListener("contextmenu", handleContextMenu);
+    window.addEventListener("copy", handleClipboardEvent);
+    window.addEventListener("cut", handleClipboardEvent);
+    window.addEventListener("paste", handleClipboardEvent);
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+      window.removeEventListener("contextmenu", handleContextMenu);
+      window.removeEventListener("copy", handleClipboardEvent);
+      window.removeEventListener("cut", handleClipboardEvent);
+      window.removeEventListener("paste", handleClipboardEvent);
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [payload, handleSubmit]);
 
   if (loading) {
     return <main className="min-h-screen bg-[#f5f7fa] p-10 text-center">Loading exam...</main>;
@@ -125,7 +281,7 @@ function ExamPageContent() {
         </h1>
         <div className="mt-[15px] inline-flex items-center rounded-lg bg-white px-5 py-[10px] font-semibold text-[#ba124f] shadow-[0_4px_8px_rgba(0,0,0,0.15)]">
           <FaClock className="mr-[10px] text-[#ba124f]" />
-          <span>{payload.exam.durationMinutes}:00</span>
+          <span>{formatTime(remainingSeconds)}</span>
           <span className="ml-1">remaining</span>
         </div>
       </header>
@@ -164,6 +320,24 @@ function ExamPageContent() {
             <FaCheckCircle />
             <span>{answeredCount} answered</span>
           </div>
+        </section>
+
+        <section className="mt-[15px] rounded-lg border border-[#f1d8de] bg-[#fff4f8] px-[15px] py-[12px] text-sm text-[#7e1137]">
+          <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+            <div className="flex items-center gap-2 font-semibold">
+              <FaShieldAlt />
+              <span>Exam protection is active</span>
+            </div>
+            <div className="flex items-center gap-2 rounded-full bg-[#7e1137] px-3 py-1 text-xs font-semibold text-white">
+              <FaExclamationTriangle />
+              <span>{securityFlags} flagged activities</span>
+            </div>
+          </div>
+          <ul className="mt-3 list-disc space-y-1 pl-5 text-[#655a61]">
+            <li>You must stay on this exam page until submission.</li>
+            <li>Leaving or minimizing the page will trigger automatic submission.</li>
+            <li>Abnormal activities like copy, paste, right-click, and restricted shortcuts are recorded.</li>
+          </ul>
         </section>
 
         <div className="my-[15px] text-center font-medium text-[#666]">Page 1 of 1</div>
@@ -213,6 +387,12 @@ function ExamPageContent() {
           </p>
         ) : null}
 
+        {activityMessage ? (
+          <p className="mb-4 rounded-md bg-[rgba(186,18,79,0.08)] px-4 py-3 text-sm text-[#ba124f]">
+            {activityMessage}
+          </p>
+        ) : null}
+
         <div className="mt-[25px] flex justify-between gap-[15px] max-md:flex-col">
           <button
             type="button"
@@ -230,7 +410,7 @@ function ExamPageContent() {
           </button>
           <button
             type="button"
-            onClick={() => void handleSubmit()}
+            onClick={() => void handleSubmit("manual")}
             disabled={submitting}
             className="flex flex-1 items-center justify-center gap-2 rounded-[5px] bg-[#27ae60] px-[25px] py-3 text-[0.95rem] font-semibold text-white transition duration-200 hover:bg-[#219653] disabled:cursor-not-allowed disabled:opacity-70"
           >

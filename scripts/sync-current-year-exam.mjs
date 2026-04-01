@@ -32,7 +32,7 @@ async function main() {
         slug: "discipleship-stewardship-class-exam",
         instructions:
           "Follow the same church exam flow, but submissions and results are now stored on the backend.",
-        durationMinutes: 35,
+        durationMinutes: 50,
         status: "PUBLISHED",
         departments: [
           "Choir",
@@ -55,6 +55,14 @@ async function main() {
     }));
 
   await prisma.$transaction([
+    prisma.exam.update({
+      where: {
+        id: exam.id,
+      },
+      data: {
+        durationMinutes: 50,
+      },
+    }),
     prisma.questionOption.deleteMany({
       where: {
         question: {
