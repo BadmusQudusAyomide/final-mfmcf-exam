@@ -95,14 +95,20 @@ export default function HomePage() {
       const payload = (await response.json()) as {
         candidateId?: string;
         error?: string;
+        code?: string;
       };
 
       if (!response.ok || !payload.candidateId) {
         setErrorMessage(payload.error ?? "Unable to save registration.");
         showToast({
-          variant: "error",
-          title: "Registration failed",
-          description: payload.error ?? "Unable to save registration right now.",
+          variant:
+            payload.code === "MATRIC_NUMBER_ALREADY_USED" ? "warning" : "error",
+          title:
+            payload.code === "MATRIC_NUMBER_ALREADY_USED"
+              ? "Quiz already taken"
+              : "Registration failed",
+          description:
+            payload.error ?? "Unable to save registration right now.",
         });
         return;
       }

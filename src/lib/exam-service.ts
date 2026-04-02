@@ -178,6 +178,10 @@ function normalizeOptionPayload(input: QuestionInput) {
   return options;
 }
 
+function normalizeMatricNumber(matricNumber: string) {
+  return matricNumber.trim().toUpperCase();
+}
+
 async function renumberQuestions(examId: string, tx: Prisma.TransactionClient = prisma) {
   const questions = await tx.examQuestion.findMany({
     where: { examId },
@@ -202,11 +206,51 @@ async function renumberQuestions(examId: string, tx: Prisma.TransactionClient = 
 
 export async function registerCandidate(input: RegistrationInput) {
   const exam = await getOrCreateExam();
+  const normalizedMatricNumber = normalizeMatricNumber(input.matricNumber);
+
+  const existingCandidate = await prisma.candidate.findFirst({
+    where: {
+      matricNumber: {
+        equals: normalizedMatricNumber,
+        mode: "insensitive",
+      },
+    },
+    include: {
+      submissions: {
+        where: {
+          examId: exam.id,
+        },
+        select: {
+          id: true,
+        },
+      },
+      sessions: {
+        where: {
+          examId: exam.id,
+        },
+        select: {
+          id: true,
+          status: true,
+        },
+      },
+    },
+  });
+
+  if (existingCandidate) {
+    const hasSubmission = existingCandidate.submissions.length > 0;
+    const hasSession = existingCandidate.sessions.length > 0;
+
+    if (hasSubmission || hasSession) {
+      const error = new Error("MATRIC_NUMBER_ALREADY_USED");
+      (error as Error & { candidateId?: string }).candidateId = existingCandidate.id;
+      throw error;
+    }
+  }
 
   const candidate = await prisma.candidate.create({
     data: {
       fullName: input.fullName,
-      matricNumber: input.matricNumber,
+      matricNumber: normalizedMatricNumber,
       phoneNumber: input.phoneNumber,
       department: input.department,
       level: input.level,
