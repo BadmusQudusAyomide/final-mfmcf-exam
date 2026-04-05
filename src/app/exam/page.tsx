@@ -18,6 +18,7 @@ import { useToast } from "@/components/toast-provider";
 
 const QUESTIONS_PER_PAGE = 10;
 const WARNING_THRESHOLDS = [900, 300, 60] as const;
+const EXAM_CLOSED = true;
 
 interface ExamPayload {
   candidate: {
@@ -937,6 +938,31 @@ function ExamPageContent() {
 }
 
 export default function ExamPage() {
+  if (EXAM_CLOSED) {
+    return (
+      <main className="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top,#fff5f8_0%,#f6f8fb_45%,#eef2f8_100%)] px-5 py-10 text-[#333]">
+        <section className="w-full max-w-xl rounded-[28px] border border-[#f0d9e0] bg-white/95 p-8 text-center shadow-[0_24px_60px_rgba(126,17,55,0.12)] backdrop-blur">
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#fff3f6] text-2xl text-[#ba124f]">
+            <FaInfoCircle />
+          </div>
+          <h1 className="mt-5 text-3xl font-bold text-[#7e1137]">Exam Done for Tonight</h1>
+          <p className="mt-4 text-sm leading-7 text-[#655a61]">
+            The quiz session has ended and is no longer accepting new attempts. Please check back
+            when the next exam window opens.
+          </p>
+          <div className="mt-6">
+            <Link
+              href="/"
+              className="inline-flex items-center justify-center rounded-2xl bg-[#7e1137] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#65102d]"
+            >
+              Return Home
+            </Link>
+          </div>
+        </section>
+      </main>
+    );
+  }
+
   return (
     <Suspense fallback={<main className="min-h-screen bg-[#f5f7fa] p-10 text-center">Loading exam...</main>}>
       <ExamPageContent />
