@@ -30,6 +30,7 @@ const fallbackDepartments = [
 ];
 
 const fallbackLevels = ["100", "200", "300", "400", "500"];
+const EXAM_CLOSED = true;
 
 export default function HomePage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -149,24 +150,30 @@ export default function HomePage() {
             <FaArrowRight className="mr-[10px] text-[1.2rem] text-[#ba124f]" />
             <span className="font-medium">Discipleship/Stewardship Class Exam</span>
           </div>
-          <button
-            type="button"
-            onClick={() => {
-              setIsModalOpen(true);
-              showToast({
-                variant: "info",
-                title: "Complete your registration",
-                description: "Enter your details to continue to the exam instructions.",
-              });
-            }}
-            className="cursor-pointer rounded-[30px] bg-[#ba124f] px-[30px] py-3 text-base font-semibold text-white shadow-[0_4px_15px_rgba(186,18,79,0.3)] transition duration-300 hover:-translate-y-[3px] hover:bg-[#9a0e40] hover:shadow-[0_6px_20px_rgba(186,18,79,0.4)]"
-          >
-            Take Exam
-          </button>
+          {EXAM_CLOSED ? (
+            <div className="rounded-[18px] border border-[#f0d9e0] bg-[#fff5f8] px-4 py-4 text-sm text-[#7e1137]">
+              The exam is closed for tonight. Please check back when the next window opens.
+            </div>
+          ) : (
+            <button
+              type="button"
+              onClick={() => {
+                setIsModalOpen(true);
+                showToast({
+                  variant: "info",
+                  title: "Complete your registration",
+                  description: "Enter your details to continue to the exam instructions.",
+                });
+              }}
+              className="cursor-pointer rounded-[30px] bg-[#ba124f] px-[30px] py-3 text-base font-semibold text-white shadow-[0_4px_15px_rgba(186,18,79,0.3)] transition duration-300 hover:-translate-y-[3px] hover:bg-[#9a0e40] hover:shadow-[0_6px_20px_rgba(186,18,79,0.4)]"
+            >
+              Take Exam
+            </button>
+          )}
         </div>
       </main>
 
-      {isModalOpen ? (
+      {isModalOpen && !EXAM_CLOSED ? (
         <div
           className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/70 px-4"
           onClick={() => setIsModalOpen(false)}
