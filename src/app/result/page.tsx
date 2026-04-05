@@ -238,9 +238,9 @@ function ResultPageContent() {
       className="mx-auto flex min-h-screen w-full max-w-[1220px] flex-col px-5 py-6 motion-safe:animate-[softFade_0.45s_ease-out]"
     >
       <header className="relative mb-8 overflow-hidden rounded-[34px] border border-white/70 bg-[linear-gradient(135deg,#7e1137_0%,#a51752_38%,#ba124f_72%,#cf4f7d_100%)] px-6 py-8 text-white shadow-[0_24px_56px_rgba(126,17,55,0.18)] motion-safe:animate-[softRise_0.8s_ease-out] sm:px-8">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.22),transparent_35%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.15),transparent_28%)]" />
-        <div className="absolute -top-12 right-8 h-28 w-28 rounded-full bg-white/16 blur-3xl" />
-        <div className="absolute left-8 bottom-0 h-24 w-24 rounded-full bg-white/10 blur-3xl" />
+        <div className="print-hide absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.22),transparent_35%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.15),transparent_28%)]" />
+        <div className="print-hide absolute -top-12 right-8 h-28 w-28 rounded-full bg-white/16 blur-3xl" />
+        <div className="print-hide absolute left-8 bottom-0 h-24 w-24 rounded-full bg-white/10 blur-3xl" />
         <div className="relative flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.32em] text-white/70">
@@ -495,35 +495,20 @@ type Html2PdfFactory = () => {
   };
 };
 
-declare global {
-  interface Window {
-    html2pdf?: Html2PdfFactory;
-  }
-}
+let html2pdfPromise: Promise<Html2PdfFactory> | null = null;
 
 async function loadHtml2Pdf(): Promise<Html2PdfFactory> {
-  // Check if html2pdf is already loaded
-  if (window.html2pdf) {
-    return window.html2pdf;
+  if (!html2pdfPromise) {
+    html2pdfPromise = import("html2pdf.js").then((mod) => {
+      const factory = (mod.default ?? mod) as unknown as Html2PdfFactory;
+
+      if (typeof factory !== "function") {
+        throw new Error("html2pdf module did not export a function.");
+      }
+
+      return factory;
+    });
   }
 
-  // Load html2pdf dynamically
-  await new Promise<void>((resolve, reject) => {
-    const script = document.createElement("script");
-    script.src = "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js";
-    script.async = true;
-    script.onload = () => {
-      // Small delay to ensure the library is fully initialized
-      setTimeout(() => resolve(), 100);
-    };
-    script.onerror = () => reject(new Error("Failed to load html2pdf library."));
-    document.head.appendChild(script);
-  });
-
-  // Verify that html2pdf is now available
-  if (!window.html2pdf) {
-    throw new Error("html2pdf library failed to initialize.");
-  }
-
-  return window.html2pdf;
+  return html2pdfPromise;
 }

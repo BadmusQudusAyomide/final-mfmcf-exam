@@ -149,8 +149,8 @@ a {
     background: white !important;
   }
   
-  /* Hide decorative elements */
-  .absolute {
+  /* Hide decorative elements explicitly marked for print */
+  .print-hide {
     display: none !important;
   }
   
