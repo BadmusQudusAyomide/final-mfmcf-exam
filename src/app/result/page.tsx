@@ -148,13 +148,25 @@ function ResultPageContent() {
 
   async function handleDownloadPdf() {
     if (!resultContainerRef.current || !payload) {
+      showToast({
+        variant: "error",
+        title: "Cannot generate PDF",
+        description: "Result data is not available. Please refresh the page.",
+      });
       return;
     }
 
     setIsDownloading(true);
 
     try {
+      showToast({
+        variant: "info",
+        title: "Preparing PDF",
+        description: "Loading PDF library and generating your document...",
+      });
+
       const html2pdf = await loadHtml2Pdf();
+      
       await html2pdf()
         .set({
           margin: 10,
@@ -171,16 +183,53 @@ function ResultPageContent() {
         })
         .from(resultContainerRef.current)
         .save();
+
+      showToast({
+        variant: "success",
+        title: "PDF Downloaded",
+        description: "Your exam results have been downloaded successfully.",
+      });
     } catch (error) {
-      console.error(error);
-      setErrorMessage("Unable to download PDF right now.");
+      console.error("PDF generation error:", error);
+      showToast({
+        variant: "error",
+        title: "PDF Generation Failed",
+        description: "Unable to generate PDF right now. Please check your internet connection and try again.",
+      });
     } finally {
       setIsDownloading(false);
     }
   }
 
   function handlePrintResults() {
-    window.print();
+    try {
+      showToast({
+        variant: "info",
+        title: "Preparing Print",
+        description: "Opening print dialog for your results...",
+      });
+
+      // Small delay to ensure the toast is visible
+      setTimeout(() => {
+        window.print();
+        
+        // Show success message after print dialog (with delay)
+        setTimeout(() => {
+          showToast({
+            variant: "success",
+            title: "Print Dialog Opened",
+            description: "Use your browser's print dialog to print your results.",
+          });
+        }, 500);
+      }, 500);
+    } catch (error) {
+      console.error("Print error:", error);
+      showToast({
+        variant: "error",
+        title: "Print Failed",
+        description: "Unable to open print dialog. Please try again.",
+      });
+    }
   }
 
   return (
@@ -446,27 +495,35 @@ type Html2PdfFactory = () => {
   };
 };
 
+declare global {
+  interface Window {
+    html2pdf?: Html2PdfFactory;
+  }
+}
+
 async function loadHtml2Pdf(): Promise<Html2PdfFactory> {
-  const existing = (window as Window & { html2pdf?: Html2PdfFactory }).html2pdf;
-  if (existing) {
-    return existing;
+  // Check if html2pdf is already loaded
+  if (window.html2pdf) {
+    return window.html2pdf;
   }
 
+  // Load html2pdf dynamically
   await new Promise<void>((resolve, reject) => {
     const script = document.createElement("script");
-    script.src =
-      "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js";
+    script.src = "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js";
     script.async = true;
-    script.onload = () => resolve();
-    script.onerror = () => reject(new Error("Failed to load html2pdf."));
+    script.onload = () => {
+      // Small delay to ensure the library is fully initialized
+      setTimeout(() => resolve(), 100);
+    };
+    script.onerror = () => reject(new Error("Failed to load html2pdf library."));
     document.head.appendChild(script);
   });
 
-  const loaded = (window as Window & { html2pdf?: Html2PdfFactory }).html2pdf;
-
-  if (!loaded) {
-    throw new Error("html2pdf is unavailable.");
+  // Verify that html2pdf is now available
+  if (!window.html2pdf) {
+    throw new Error("html2pdf library failed to initialize.");
   }
 
-  return loaded;
+  return window.html2pdf;
 }

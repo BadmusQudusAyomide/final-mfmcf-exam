@@ -114,4 +114,54 @@ a {
   .no-print {
     display: none !important;
   }
+  
+  /* Improve print layout */
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt !important;
+    line-height: 1.4 !important;
+  }
+  
+  /* Ensure full width for printing */
+  .mx-auto {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Remove animations and shadows */
+  * {
+    animation: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  /* Ensure text is readable */
+  .text-white {
+    color: black !important;
+  }
+  
+  /* Simplify backgrounds */
+  .bg-gradient-to-r,
+  .bg-gradient-to-b,
+  .bg-gradient {
+    background: white !important;
+  }
+  
+  /* Hide decorative elements */
+  .absolute {
+    display: none !important;
+  }
+  
+  /* Ensure proper spacing */
+  section {
+    page-break-inside: avoid;
+    margin-bottom: 1rem !important;
+  }
+  
+  article {
+    page-break-inside: avoid;
+    margin-bottom: 0.5rem !important;
+  }
 }

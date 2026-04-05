@@ -23,13 +23,36 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Set up event listeners for buttons
     const downloadPdfButton = document.getElementById('downloadPdf');
+    const printResultsButton = document.getElementById('printResults');
+    
+    console.log('Setting up button listeners...');
+    console.log('Download button found:', !!downloadPdfButton);
+    console.log('Print button found:', !!printResultsButton);
+    
     if (downloadPdfButton) {
-        downloadPdfButton.addEventListener('click', downloadAsPDF);
+        downloadPdfButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Download PDF button clicked');
+            downloadAsPDF();
+        });
+        downloadPdfButton.addEventListener('error', function(e) {
+            console.error('Download button error:', e);
+        });
+    } else {
+        console.error('Download PDF button not found in DOM');
     }
     
-    const printResultsButton = document.getElementById('printResults');
     if (printResultsButton) {
-        printResultsButton.addEventListener('click', printResults);
+        printResultsButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Print results button clicked');
+            printResults();
+        });
+        printResultsButton.addEventListener('error', function(e) {
+            console.error('Print button error:', e);
+        });
+    } else {
+        console.error('Print results button not found in DOM');
     }
 });
 
@@ -175,41 +198,94 @@ function updateProgressCircle(percentage) {
 }
 
 function downloadAsPDF() {
-    // Check if html2pdf is loaded
-    if (typeof html2pdf === 'undefined') {
-        // Load html2pdf.js dynamically
-        const script = document.createElement('script');
-        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
-        script.onload = () => {
+    try {
+        // Check if html2pdf is loaded
+        if (typeof html2pdf === 'undefined') {
+            showToast('Loading PDF library...', 'info');
+            // Load html2pdf.js dynamically
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
+            script.onload = () => {
+                showToast('PDF library loaded, generating download...', 'success');
+                generatePDF();
+            };
+            script.onerror = () => {
+                showToast('Failed to load PDF library. Please check your internet connection.', 'error');
+            };
+            document.head.appendChild(script);
+        } else {
             generatePDF();
-        };
-        document.head.appendChild(script);
-    } else {
-        generatePDF();
+        }
+    } catch (error) {
+        console.error('Error in downloadAsPDF:', error);
+        showToast('Failed to generate PDF. Please try again.', 'error');
     }
 }
 
 function generatePDF() {
-    const element = document.querySelector('.container');
-    const opt = {
-        margin: 10,
-        filename: 'exam_results.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { 
-            scale: 2,
-            scrollX: 0,
-            scrollY: 0,
-            windowWidth: document.documentElement.scrollWidth,
-            windowHeight: document.documentElement.scrollHeight
-        },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-    };
-    
-    html2pdf().set(opt).from(element).save();
+    try {
+        const element = document.querySelector('.container');
+        if (!element) {
+            showToast('Content not found for PDF generation.', 'error');
+            return;
+        }
+
+        showToast('Generating PDF...', 'info');
+        
+        const opt = {
+            margin: 10,
+            filename: 'exam_results.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { 
+                scale: 2,
+                scrollX: 0,
+                scrollY: 0,
+                windowWidth: document.documentElement.scrollWidth,
+                windowHeight: document.documentElement.scrollHeight
+            },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+        
+        html2pdf().set(opt).from(element).save().then(() => {
+            showToast('PDF downloaded successfully!', 'success');
+        }).catch((error) => {
+            console.error('PDF generation error:', error);
+            showToast('Failed to generate PDF. Please try again.', 'error');
+        });
+    } catch (error) {
+        console.error('Error in generatePDF:', error);
+        showToast('Failed to generate PDF. Please try again.', 'error');
+    }
 }
 
 function printResults() {
-    window.print();
+    try {
+        showToast('Preparing print dialog...', 'info');
+        
+        // Store original overflow
+        const originalOverflow = document.body.style.overflow;
+        
+        // Temporarily hide scrollbars for better print layout
+        document.body.style.overflow = 'hidden';
+        
+        // Use setTimeout to ensure the UI updates before print
+        setTimeout(() => {
+            window.print();
+            // Restore overflow after print dialog
+            setTimeout(() => {
+                document.body.style.overflow = originalOverflow;
+                showToast('Print dialog opened!', 'success');
+            }, 100);
+        }, 100);
+        
+        // Fallback to restore overflow after a delay
+        setTimeout(() => {
+            document.body.style.overflow = originalOverflow;
+        }, 2000);
+    } catch (error) {
+        console.error('Error in printResults:', error);
+        showToast('Failed to open print dialog. Please try again.', 'error');
+    }
 }
 
 function showToast(message, type = 'info', duration = 3000) {

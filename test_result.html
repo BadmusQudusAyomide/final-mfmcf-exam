@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Result Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ccc; }
+        button { margin: 5px; padding: 10px 15px; cursor: pointer; }
+        .btn-download { background-color: #BA124F; color: white; border: none; }
+        .btn-print { background-color: #4caf50; color: white; border: none; }
+    </style>
+</head>
+<body>
+    <h1>Test Result Page Functionality</h1>
+    
+    <div class="test-section">
+        <h2>Button Test</h2>
+        <button id="downloadPdf" class="btn-download">
+            <i>📄</i> Download Results
+        </button>
+        <button id="printResults" class="btn-print">
+            <i>🖨️</i> Print Results
+        </button>
+    </div>
+    
+    <div class="test-section">
+        <h2>Console Output</h2>
+        <div id="console-output"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        // Mock console output
+        const originalLog = console.log;
+        const originalError = console.error;
+        const outputDiv = document.getElementById('console-output');
+        
+        function addToOutput(message, type = 'log') {
+            const div = document.createElement('div');
+            div.style.color = type === 'error' ? 'red' : 'black';
+            div.textContent = `[${type.toUpperCase()}] ${message}`;
+            outputDiv.appendChild(div);
+        }
+        
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            addToOutput(args.join(' '), 'log');
+        };
+        
+        console.error = function(...args) {
+            originalError.apply(console, args);
+            addToOutput(args.join(' '), 'error');
+        };
+        
+        // Test the button functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Setting up button listeners...');
+            
+            const downloadPdfButton = document.getElementById('downloadPdf');
+            const printResultsButton = document.getElementById('printResults');
+            
+            console.log('Download button found:', !!downloadPdfButton);
+            console.log('Print button found:', !!printResultsButton);
+            
+            if (downloadPdfButton) {
+                downloadPdfButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Download PDF button clicked');
+                    alert('Download button is working! PDF generation would start here.');
+                });
+            }
+            
+            if (printResultsButton) {
+                printResultsButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Print results button clicked');
+                    alert('Print button is working! Print dialog would open here.');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
